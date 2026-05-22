@@ -3,20 +3,24 @@ import { getRxStorageDexie } from 'rxdb/plugins/storage-dexie';
 import { userSchema, projectSchema, cardSchema, commentSchema, wikiPageSchema } from './schemas';
 import type { User, Project, Card, Comment, WikiPage } from './types';
 
-export type KanbanDatabase = RxDatabase<{
-  users: import('rxdb').RxCollection<User>;
-  projects: import('rxdb').RxCollection<Project>;
-  cards: import('rxdb').RxCollection<Card>;
-  comments: import('rxdb').RxCollection<Comment>;
-  wikiPages: import('rxdb').RxCollection<WikiPage>;
-}>;
+import type { RxCollection } from 'rxdb';
+
+export type KanbanCollections = {
+  users: RxCollection<User>;
+  projects: RxCollection<Project>;
+  cards: RxCollection<Card>;
+  comments: RxCollection<Comment>;
+  wikiPages: RxCollection<WikiPage>;
+};
+
+export type KanbanDatabase = RxDatabase<KanbanCollections>;
 
 let dbInstance: KanbanDatabase | null = null;
 
 export async function getDatabase(): Promise<KanbanDatabase> {
   if (dbInstance) return dbInstance;
 
-  const db = await createRxDatabase<KanbanDatabase>({
+  const db = await createRxDatabase<KanbanCollections>({
     name: 'kanban_db',
     storage: getRxStorageDexie(),
   });
@@ -38,4 +42,12 @@ export function getDbUnsafe(): KanbanDatabase {
     throw new Error('Database not initialized yet');
   }
   return dbInstance;
+}
+
+export function resetDatabase(): void {
+  dbInstance = null;
+}
+
+export function setDatabaseInstance(db: KanbanDatabase): void {
+  dbInstance = db;
 }
