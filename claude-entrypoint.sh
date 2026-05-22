@@ -69,10 +69,19 @@ echo "Model: $OLLAMA_MODEL"
 echo "Prompt length: ${#PROMPT} characters"
 echo "========================================"
 
-claude --model "$OLLAMA_MODEL" -p "$PROMPT" --dangerously-skip-permissions --output-format stream-json --verbose --include-partial-messages || {
-    EXIT_CODE=$?
-    echo "ERROR: Claude Code exited with code $EXIT_CODE" >&2
-    exit $EXIT_CODE
-}
+EXIT_CODE=0
+claude --model "$OLLAMA_MODEL" -p "$PROMPT" --dangerously-skip-permissions --output-format stream-json --verbose --include-partial-messages || EXIT_CODE=$?
 
-echo "Claude Code finished successfully"
+echo "Claude Code exited with code $EXIT_CODE"
+
+# Commit and push regardless of success or failure
+cd "$TARGET_DIR"
+git add -A || true
+git commit -m "ai-dev-env: checkpoint after Claude exit" || true
+git push origin "$BRANCH" || true
+
+if [ $EXIT_CODE -ne 0 ]; then
+    echo "ERROR: Claude Code exited with code $EXIT_CODE" >&2
+fi
+
+exit $EXIT_CODE
