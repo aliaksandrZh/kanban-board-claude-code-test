@@ -1,12 +1,26 @@
 #!/bin/bash
 set -e
 
+# Validate required env vars before any expensive setup
+if [ -z "${OLLAMA_MODEL:-}" ]; then
+    echo "ERROR: OLLAMA_MODEL environment variable is not set" >&2
+    exit 1
+fi
+
+if [ -z "${PROMPT:-}" ]; then
+    echo "ERROR: PROMPT environment variable is not set" >&2
+    exit 1
+fi
+
 REPO_URL="git@github.com:aliaksandrZh/kanban-board-claude-code-test.git"
 BRANCH="${BRANCH:-main}"
 TARGET_DIR="/home/developer/workspace"
 
 GIT_USER_EMAIL="${GIT_USER_EMAIL:-test-ollama-claude@example.com}"
 GIT_USER_NAME="${GIT_USER_NAME:-Your Name}"
+
+OLLAMA_MODEL="${OLLAMA_MODEL}"
+PROMPT="${PROMPT}"
 
 # Set global config
 git config --global user.email "$GIT_USER_EMAIL"
@@ -48,5 +62,17 @@ git checkout "$BRANCH"
 git config user.email "$GIT_USER_EMAIL"
 git config user.name "$GIT_USER_NAME"
 
-# Keep container alive with interactive bash
-exec bash
+# Run Claude Code with the specified model and prompt
+echo "========================================"
+echo "CLAUDE CODE STARTING"
+echo "Model: $OLLAMA_MODEL"
+echo "Prompt length: ${#PROMPT} characters"
+echo "========================================"
+
+claude --model "$OLLAMA_MODEL" -p "$PROMPT" --dangerously-skip-permissions --output-format stream-json --verbose --include-partial-messages || {
+    EXIT_CODE=$?
+    echo "ERROR: Claude Code exited with code $EXIT_CODE" >&2
+    exit $EXIT_CODE
+}
+
+echo "Claude Code finished successfully"

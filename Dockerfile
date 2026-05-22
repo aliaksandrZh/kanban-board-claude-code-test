@@ -21,28 +21,40 @@ RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
     && rm -rf /var/lib/apt/lists/* \
     && npm install -g pnpm
 
-# Install Ollama (This will now succeed with zstd present!)
+# Create developer user before installing user-scoped tools
+RUN useradd -m -s /bin/bash developer
+
+# Install Ollama (system-wide daemon)
 RUN curl -fsSL https://ollama.com/install.sh | sh
 
-# Install Claude Code using the native installation script
+# Ensure Ollama data directory is writable by developer
+RUN mkdir -p /home/developer/.ollama && chown -R developer:developer /home/developer/.ollama
+
+# Install Claude Code as developer so it lands in /home/developer/.local/bin
+USER developer
+WORKDIR /home/developer/workspace
 RUN curl -fsSL https://claude.ai/install.sh | bash
 
-# Ensure Claude Code path is available system-wide for all users
-ENV PATH="/root/.local/bin:/root/.claude/bin:/home/developer/.local/bin:$PATH"
-ENV PATH="$HOME/.local/bin:$PATH"
+# Ensure Claude Code path is available for developer user
+ENV PATH="/home/developer/.local/bin:/home/developer/.claude/bin:$PATH"
 
 ENV ANTHROPIC_AUTH_TOKEN=ollama
 ENV ANTHROPIC_API_KEY=
 ENV ANTHROPIC_BASE_URL=http://localhost:11434
 
 # Create workspace directory for runtime clone
-RUN mkdir -p /root/workspace
+RUN mkdir -p /home/developer/workspace
+
+# Switch back to root for copying scripts into system paths
+USER root
 
 # Copy scripts
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
+COPY claude-entrypoint.sh /usr/local/bin/claude-entrypoint.sh
 COPY start-ollama.sh /usr/local/bin/start-ollama.sh
-RUN chmod +x /usr/local/bin/entrypoint.sh /usr/local/bin/start-ollama.sh \
-    && sed -i 's/\r$//' /usr/local/bin/entrypoint.sh /usr/local/bin/start-ollama.sh
+RUN chmod +x /usr/local/bin/entrypoint.sh /usr/local/bin/claude-entrypoint.sh /usr/local/bin/start-ollama.sh \
+    && sed -i 's/\r$//' /usr/local/bin/entrypoint.sh /usr/local/bin/claude-entrypoint.sh /usr/local/bin/start-ollama.sh
 
-# Run entrypoint at container startup
-ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
+# Run entrypoint at container startup as developer
+USER developer
+ENTRYPOINT ["/usr/local/bin/claude-entrypoint.sh"]
