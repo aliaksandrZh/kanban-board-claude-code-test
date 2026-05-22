@@ -6,8 +6,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    tty: true
-    stdin_open: true
     ports:
       - "11434:11434"
     environment:

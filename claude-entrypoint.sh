@@ -73,12 +73,26 @@ EXIT_CODE=0
 claude --model "$OLLAMA_MODEL" -p "$PROMPT" --dangerously-skip-permissions --output-format stream-json --verbose --include-partial-messages || EXIT_CODE=$?
 
 echo "Claude Code exited with code $EXIT_CODE"
+echo ""
+echo "========================================"
+echo "JOB STATUS: Claude finished"
+echo "Exit code: $EXIT_CODE"
+echo "Timestamp: $(date -Iseconds)"
+echo "========================================"
+echo ""
 
 # Commit and push regardless of success or failure
 cd "$TARGET_DIR"
 git add -A || true
 git commit -m "ai-dev-env: checkpoint after Claude exit" || true
 git push origin "$BRANCH" || true
+
+echo ""
+echo "========================================"
+echo "JOB STATUS: Sync finished"
+echo "Changes committed and pushed"
+echo "========================================"
+echo ""
 
 if [ $EXIT_CODE -ne 0 ]; then
     echo "ERROR: Claude Code exited with code $EXIT_CODE" >&2
