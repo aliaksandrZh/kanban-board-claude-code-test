@@ -1,0 +1,30 @@
+- generic [ref=e2]:
+  - navigation [ref=e4]:
+    - link "Kanban" [ref=e5] [cursor=pointer]:
+      - /url: /projects
+    - generic [ref=e6]:
+      - link "Dashboard" [ref=e7] [cursor=pointer]:
+        - /url: /projects
+      - combobox "Current user" [ref=e9]:
+        - option "root" [selected]
+  - generic [ref=e11]:
+    - generic [ref=e12]:
+      - heading "Projects" [level=2] [ref=e13]
+      - generic [ref=e14]:
+        - textbox "Project name" [ref=e15]
+        - textbox "Description" [ref=e16]
+        - button "Create Project" [active] [ref=e17] [cursor=pointer]
+      - list [ref=e18]:
+        - listitem [ref=e28]:
+          - link "Website Redesign" [ref=e29] [cursor=pointer]:
+            - /url: /project/project_1779481332646_mabikuy/board
+          - generic [ref=e30]: Redesign the company website
+          - button "Delete" [ref=e31] [cursor=pointer]
+    - generic [ref=e20]:
+      - heading "Users" [level=2] [ref=e21]
+      - generic [ref=e22]:
+        - textbox "Username" [ref=e23]
+        - button "Create User" [ref=e24] [cursor=pointer]
+      - list [ref=e25]:
+        - listitem [ref=e26]:
+          - generic [ref=e27]: root

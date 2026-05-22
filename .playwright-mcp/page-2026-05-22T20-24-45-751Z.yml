@@ -1,0 +1,65 @@
+- generic [ref=e2]:
+  - navigation [ref=e4]:
+    - link "Kanban" [ref=e5] [cursor=pointer]:
+      - /url: /projects
+    - generic [ref=e6]:
+      - link "Dashboard" [ref=e7] [cursor=pointer]:
+        - /url: /projects
+      - combobox "Current user" [ref=e9]:
+        - option "root" [selected]
+  - generic [ref=e82]:
+    - generic [ref=e83]:
+      - link "← Back to Board" [ref=e84] [cursor=pointer]:
+        - /url: /project/project_1779481332646_mabikuy/board
+      - heading "Homepage hero section" [level=1] [ref=e85]
+      - generic [ref=e86]:
+        - generic [ref=e87]: feature
+        - generic [ref=e88]: new
+    - generic [ref=e89]:
+      - generic [ref=e90]:
+        - generic [ref=e91]:
+          - heading "Description" [level=3] [ref=e92]
+          - textbox [ref=e93]: Design and implement the new hero section for the homepage
+          - button "Save" [ref=e94] [cursor=pointer]
+        - generic [ref=e95]:
+          - heading "Checklist" [level=3] [ref=e96]
+          - generic [ref=e97]:
+            - textbox "New item" [ref=e98]
+            - button "Add" [ref=e99] [cursor=pointer]
+        - generic [ref=e100]:
+          - heading "Comments" [level=3] [ref=e101]
+          - paragraph [ref=e103]: No comments yet.
+          - generic [ref=e104]:
+            - textbox "Add a comment" [ref=e105]
+            - button "Post" [ref=e106] [cursor=pointer]
+      - complementary [ref=e107]:
+        - generic [ref=e108]:
+          - heading "Assignee" [level=4] [ref=e109]
+          - combobox [ref=e110]:
+            - option "Unassigned" [selected]
+            - option "root"
+        - generic [ref=e111]:
+          - heading "Status" [level=4] [ref=e112]
+          - combobox [ref=e113]:
+            - option "New" [selected]
+            - option "Active"
+            - option "Ready to Test"
+            - option "Completed"
+            - option "Closed"
+        - generic [ref=e114]:
+          - heading "Labels" [level=4] [ref=e115]
+          - generic [ref=e116]:
+            - textbox "Label" [ref=e117]
+            - button "Add" [ref=e118] [cursor=pointer]
+        - generic [ref=e119]:
+          - heading "Related Cards" [level=4] [ref=e120]
+          - list
+          - generic [ref=e121]:
+            - combobox [ref=e122]:
+              - option "Select card..." [selected]
+            - button "Link" [ref=e123] [cursor=pointer]
+        - generic [ref=e124]:
+          - heading "Metadata" [level=4] [ref=e125]
+          - paragraph [ref=e126]: Created by root on May 22, 2026, 8:24:15 PM
+          - paragraph [ref=e127]: Modified by root on May 22, 2026, 8:24:15 PM
+        - button "Delete Card" [ref=e128] [cursor=pointer]

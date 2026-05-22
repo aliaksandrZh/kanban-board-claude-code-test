@@ -1,0 +1,475 @@
+[      68ms] [WARNING] -------------- RxDB dev-mode warning -------------------------------
+you are seeing this because you use the RxDB dev-mode plugin https://rxdb.info/dev-mode.html?console=dev-mode 
+This is great in development mode, because it will run many checks to ensure
+that you use RxDB correct. If you see this in production mode,
+you did something wrong because the dev-mode plugin will decrease the performance.
+
+🤗 Hint: To get the most out of RxDB, check out the Premium Plugins
+to get access to faster storages and more professional features: https://rxdb.info/premium/?console=dev-mode 
+
+You can disable this warning by calling disableWarnings() from the dev-mode plugin.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:2232
+[     103ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=104ca896:6332
+[     151ms] [LOG] Angular is running in development mode. @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=104ca896:17249
+[  185137ms] [WARNING] -------------- RxDB dev-mode warning -------------------------------
+you are seeing this because you use the RxDB dev-mode plugin https://rxdb.info/dev-mode.html?console=dev-mode 
+This is great in development mode, because it will run many checks to ensure
+that you use RxDB correct. If you see this in production mode,
+you did something wrong because the dev-mode plugin will decrease the performance.
+
+🤗 Hint: To get the most out of RxDB, check out the Premium Plugins
+to get access to faster storages and more professional features: https://rxdb.info/premium/?console=dev-mode 
+
+You can disable this warning by calling disableWarnings() from the dev-mode plugin.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:2232
+[  185168ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=104ca896:6332
+[  185200ms] [LOG] Angular is running in development mode. @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=104ca896:17249
+[  227536ms] [WARNING] -------------- RxDB dev-mode warning -------------------------------
+you are seeing this because you use the RxDB dev-mode plugin https://rxdb.info/dev-mode.html?console=dev-mode 
+This is great in development mode, because it will run many checks to ensure
+that you use RxDB correct. If you see this in production mode,
+you did something wrong because the dev-mode plugin will decrease the performance.
+
+🤗 Hint: To get the most out of RxDB, check out the Premium Plugins
+to get access to faster storages and more professional features: https://rxdb.info/premium/?console=dev-mode 
+
+You can disable this warning by calling disableWarnings() from the dev-mode plugin.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:2232
+[  227570ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=104ca896:6332
+[  227608ms] [LOG] Angular is running in development mode. @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=104ca896:17249
+[  687095ms] [WARNING] -------------- RxDB dev-mode warning -------------------------------
+you are seeing this because you use the RxDB dev-mode plugin https://rxdb.info/dev-mode.html?console=dev-mode 
+This is great in development mode, because it will run many checks to ensure
+that you use RxDB correct. If you see this in production mode,
+you did something wrong because the dev-mode plugin will decrease the performance.
+
+🤗 Hint: To get the most out of RxDB, check out the Premium Plugins
+to get access to faster storages and more professional features: https://rxdb.info/premium/?console=dev-mode 
+
+You can disable this warning by calling disableWarnings() from the dev-mode plugin.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:2232
+[  687118ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=104ca896:6332
+[  687144ms] [ERROR] ERROR RxError (COL12): 
+
+Error message: A migrationStrategy is missing or too much
+Error code: COL12
+Cause: The number of migration strategies does not match the schema version difference.
+Fix: Ensure you have a migration strategy for every version step.
+Docs: https://rxdb.info/migration-schema.html?console=errors&code=COL12
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#COL12 
+
+--------------------
+Parameters:
+have: [
+  "1"
+]
+should: []
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-BVGDRGME.js?v=104ca896:3415:10)
+    at checkMigrationStrategies (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:1851:11)
+    at after (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:2343:11)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-KASAAUAO.js?v=104ca896:2372:37
+    at Array.forEach (<anonymous>)
+    at runPluginHooks (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-KASAAUAO.js?v=104ca896:2372:20)
+    at createRxCollection (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3492:5)
+    at async http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3882:24
+    at async Promise.all (index 0)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3879:5) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=104ca896:5987
+[  687144ms] [ERROR] RxError (COL12): 
+
+Error message: A migrationStrategy is missing or too much
+Error code: COL12
+Cause: The number of migration strategies does not match the schema version difference.
+Fix: Ensure you have a migration strategy for every version step.
+Docs: https://rxdb.info/migration-schema.html?console=errors&code=COL12
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#COL12 
+
+--------------------
+Parameters:
+have: [
+  "1"
+]
+should: []
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-BVGDRGME.js?v=104ca896:3415:10)
+    at checkMigrationStrategies (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:1851:11)
+    at after (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:2343:11)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-KASAAUAO.js?v=104ca896:2372:37
+    at Array.forEach (<anonymous>)
+    at runPluginHooks (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-KASAAUAO.js?v=104ca896:2372:20)
+    at createRxCollection (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3492:5)
+    at async http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3882:24
+    at async Promise.all (index 0)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3879:5) @ http://localhost:4200/main.js:217
+[  697378ms] [WARNING] -------------- RxDB dev-mode warning -------------------------------
+you are seeing this because you use the RxDB dev-mode plugin https://rxdb.info/dev-mode.html?console=dev-mode 
+This is great in development mode, because it will run many checks to ensure
+that you use RxDB correct. If you see this in production mode,
+you did something wrong because the dev-mode plugin will decrease the performance.
+
+🤗 Hint: To get the most out of RxDB, check out the Premium Plugins
+to get access to faster storages and more professional features: https://rxdb.info/premium/?console=dev-mode 
+
+You can disable this warning by calling disableWarnings() from the dev-mode plugin.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:2232
+[  697402ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=104ca896:6332
+[  697423ms] [ERROR] ERROR RxError (COL12): 
+
+Error message: A migrationStrategy is missing or too much
+Error code: COL12
+Cause: The number of migration strategies does not match the schema version difference.
+Fix: Ensure you have a migration strategy for every version step.
+Docs: https://rxdb.info/migration-schema.html?console=errors&code=COL12
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#COL12 
+
+--------------------
+Parameters:
+have: [
+  "1"
+]
+should: []
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-BVGDRGME.js?v=104ca896:3415:10)
+    at checkMigrationStrategies (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:1851:11)
+    at after (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:2343:11)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-KASAAUAO.js?v=104ca896:2372:37
+    at Array.forEach (<anonymous>)
+    at runPluginHooks (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-KASAAUAO.js?v=104ca896:2372:20)
+    at createRxCollection (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3492:5)
+    at async http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3882:24
+    at async Promise.all (index 0)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3879:5) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=104ca896:5987
+[  697423ms] [ERROR] RxError (COL12): 
+
+Error message: A migrationStrategy is missing or too much
+Error code: COL12
+Cause: The number of migration strategies does not match the schema version difference.
+Fix: Ensure you have a migration strategy for every version step.
+Docs: https://rxdb.info/migration-schema.html?console=errors&code=COL12
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#COL12 
+
+--------------------
+Parameters:
+have: [
+  "1"
+]
+should: []
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-BVGDRGME.js?v=104ca896:3415:10)
+    at checkMigrationStrategies (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:1851:11)
+    at after (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:2343:11)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-KASAAUAO.js?v=104ca896:2372:37
+    at Array.forEach (<anonymous>)
+    at runPluginHooks (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-KASAAUAO.js?v=104ca896:2372:20)
+    at createRxCollection (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3492:5)
+    at async http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3882:24
+    at async Promise.all (index 0)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3879:5) @ http://localhost:4200/main.js:217
+[  711218ms] [WARNING] -------------- RxDB dev-mode warning -------------------------------
+you are seeing this because you use the RxDB dev-mode plugin https://rxdb.info/dev-mode.html?console=dev-mode 
+This is great in development mode, because it will run many checks to ensure
+that you use RxDB correct. If you see this in production mode,
+you did something wrong because the dev-mode plugin will decrease the performance.
+
+🤗 Hint: To get the most out of RxDB, check out the Premium Plugins
+to get access to faster storages and more professional features: https://rxdb.info/premium/?console=dev-mode 
+
+You can disable this warning by calling disableWarnings() from the dev-mode plugin.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:2232
+[  711243ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=104ca896:6332
+[  711265ms] [ERROR] ERROR RxError (COL12): 
+
+Error message: A migrationStrategy is missing or too much
+Error code: COL12
+Cause: The number of migration strategies does not match the schema version difference.
+Fix: Ensure you have a migration strategy for every version step.
+Docs: https://rxdb.info/migration-schema.html?console=errors&code=COL12
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#COL12 
+
+--------------------
+Parameters:
+have: [
+  "1"
+]
+should: []
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-BVGDRGME.js?v=104ca896:3415:10)
+    at checkMigrationStrategies (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:1851:11)
+    at after (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:2343:11)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-KASAAUAO.js?v=104ca896:2372:37
+    at Array.forEach (<anonymous>)
+    at runPluginHooks (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-KASAAUAO.js?v=104ca896:2372:20)
+    at createRxCollection (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3492:5)
+    at async http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3882:24
+    at async Promise.all (index 0)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3879:5) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=104ca896:5987
+[  711265ms] [ERROR] RxError (COL12): 
+
+Error message: A migrationStrategy is missing or too much
+Error code: COL12
+Cause: The number of migration strategies does not match the schema version difference.
+Fix: Ensure you have a migration strategy for every version step.
+Docs: https://rxdb.info/migration-schema.html?console=errors&code=COL12
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#COL12 
+
+--------------------
+Parameters:
+have: [
+  "1"
+]
+should: []
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-BVGDRGME.js?v=104ca896:3415:10)
+    at checkMigrationStrategies (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:1851:11)
+    at after (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:2343:11)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-KASAAUAO.js?v=104ca896:2372:37
+    at Array.forEach (<anonymous>)
+    at runPluginHooks (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-KASAAUAO.js?v=104ca896:2372:20)
+    at createRxCollection (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3492:5)
+    at async http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3882:24
+    at async Promise.all (index 0)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3879:5) @ http://localhost:4200/main.js:217
+[  728212ms] [WARNING] -------------- RxDB dev-mode warning -------------------------------
+you are seeing this because you use the RxDB dev-mode plugin https://rxdb.info/dev-mode.html?console=dev-mode 
+This is great in development mode, because it will run many checks to ensure
+that you use RxDB correct. If you see this in production mode,
+you did something wrong because the dev-mode plugin will decrease the performance.
+
+🤗 Hint: To get the most out of RxDB, check out the Premium Plugins
+to get access to faster storages and more professional features: https://rxdb.info/premium/?console=dev-mode 
+
+You can disable this warning by calling disableWarnings() from the dev-mode plugin.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:2232
+[  728238ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=104ca896:6332
+[  728254ms] [ERROR] ERROR RxError (COL12): 
+
+Error message: A migrationStrategy is missing or too much
+Error code: COL12
+Cause: The number of migration strategies does not match the schema version difference.
+Fix: Ensure you have a migration strategy for every version step.
+Docs: https://rxdb.info/migration-schema.html?console=errors&code=COL12
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#COL12 
+
+--------------------
+Parameters:
+have: [
+  "1"
+]
+should: []
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-BVGDRGME.js?v=104ca896:3415:10)
+    at checkMigrationStrategies (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:1851:11)
+    at after (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:2343:11)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-KASAAUAO.js?v=104ca896:2372:37
+    at Array.forEach (<anonymous>)
+    at runPluginHooks (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-KASAAUAO.js?v=104ca896:2372:20)
+    at createRxCollection (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3492:5)
+    at async http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3882:24
+    at async Promise.all (index 0)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3879:5) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=104ca896:5987
+[  728254ms] [ERROR] RxError (COL12): 
+
+Error message: A migrationStrategy is missing or too much
+Error code: COL12
+Cause: The number of migration strategies does not match the schema version difference.
+Fix: Ensure you have a migration strategy for every version step.
+Docs: https://rxdb.info/migration-schema.html?console=errors&code=COL12
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#COL12 
+
+--------------------
+Parameters:
+have: [
+  "1"
+]
+should: []
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-BVGDRGME.js?v=104ca896:3415:10)
+    at checkMigrationStrategies (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:1851:11)
+    at after (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:2343:11)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-KASAAUAO.js?v=104ca896:2372:37
+    at Array.forEach (<anonymous>)
+    at runPluginHooks (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-KASAAUAO.js?v=104ca896:2372:20)
+    at createRxCollection (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3492:5)
+    at async http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3882:24
+    at async Promise.all (index 0)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3879:5) @ http://localhost:4200/main.js:217
+[  739011ms] [WARNING] -------------- RxDB dev-mode warning -------------------------------
+you are seeing this because you use the RxDB dev-mode plugin https://rxdb.info/dev-mode.html?console=dev-mode 
+This is great in development mode, because it will run many checks to ensure
+that you use RxDB correct. If you see this in production mode,
+you did something wrong because the dev-mode plugin will decrease the performance.
+
+🤗 Hint: To get the most out of RxDB, check out the Premium Plugins
+to get access to faster storages and more professional features: https://rxdb.info/premium/?console=dev-mode 
+
+You can disable this warning by calling disableWarnings() from the dev-mode plugin.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:2232
+[  739035ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=104ca896:6332
+[  739053ms] [ERROR] ERROR RxError (COL12): 
+
+Error message: A migrationStrategy is missing or too much
+Error code: COL12
+Cause: The number of migration strategies does not match the schema version difference.
+Fix: Ensure you have a migration strategy for every version step.
+Docs: https://rxdb.info/migration-schema.html?console=errors&code=COL12
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#COL12 
+
+--------------------
+Parameters:
+have: [
+  "1"
+]
+should: []
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-BVGDRGME.js?v=104ca896:3415:10)
+    at checkMigrationStrategies (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:1851:11)
+    at after (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:2343:11)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-KASAAUAO.js?v=104ca896:2372:37
+    at Array.forEach (<anonymous>)
+    at runPluginHooks (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-KASAAUAO.js?v=104ca896:2372:20)
+    at createRxCollection (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3492:5)
+    at async http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3882:24
+    at async Promise.all (index 0)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3879:5) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=104ca896:5987
+[  739054ms] [ERROR] RxError (COL12): 
+
+Error message: A migrationStrategy is missing or too much
+Error code: COL12
+Cause: The number of migration strategies does not match the schema version difference.
+Fix: Ensure you have a migration strategy for every version step.
+Docs: https://rxdb.info/migration-schema.html?console=errors&code=COL12
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#COL12 
+
+--------------------
+Parameters:
+have: [
+  "1"
+]
+should: []
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-BVGDRGME.js?v=104ca896:3415:10)
+    at checkMigrationStrategies (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:1851:11)
+    at after (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:2343:11)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-KASAAUAO.js?v=104ca896:2372:37
+    at Array.forEach (<anonymous>)
+    at runPluginHooks (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-KASAAUAO.js?v=104ca896:2372:20)
+    at createRxCollection (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3492:5)
+    at async http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3882:24
+    at async Promise.all (index 0)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:3879:5) @ http://localhost:4200/main.js:217
+[  762660ms] [WARNING] -------------- RxDB dev-mode warning -------------------------------
+you are seeing this because you use the RxDB dev-mode plugin https://rxdb.info/dev-mode.html?console=dev-mode 
+This is great in development mode, because it will run many checks to ensure
+that you use RxDB correct. If you see this in production mode,
+you did something wrong because the dev-mode plugin will decrease the performance.
+
+🤗 Hint: To get the most out of RxDB, check out the Premium Plugins
+to get access to faster storages and more professional features: https://rxdb.info/premium/?console=dev-mode 
+
+You can disable this warning by calling disableWarnings() from the dev-mode plugin.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:2232
+[  762666ms] [ERROR] ERROR RxError (DVM1): 
+
+Error message: When dev-mode is enabled, your storage must use one of the schema validators at the top level. This is because most problems people have with RxDB is because they store data that is not valid to the schema which causes strange bugs and problems.
+Error code: DVM1
+Cause: The storage Adapter you use does not support schema validation.
+Fix:  Wrap your storage with a validator like wrappedValidateAjvStorage()
+Docs: https://rxdb.info/rx-storage.html?console=errors&code=DVM1
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#DVM1 
+
+--------------------
+Parameters:
+database: "kanban_db"
+storage: "dexie"
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-BVGDRGME.js?v=104ca896:3415:10)
+    at before (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:2281:17)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-KASAAUAO.js?v=104ca896:2372:37
+    at Array.forEach (<anonymous>)
+    at runPluginHooks (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-KASAAUAO.js?v=104ca896:2372:20)
+    at createRxDatabase (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:4064:3)
+    at getDatabase (http://localhost:4200/chunk-HLS5SXWJ.js:152:20)
+    at _AppStore.createDefaultUser (http://localhost:4200/chunk-5HJT3UEV.js:43:22)
+    at http://localhost:4200/main.js:53:25
+    at runInInjectionContext (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=104ca896:4872:12) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=104ca896:5987
+[  762666ms] [ERROR] RxError (DVM1): 
+
+Error message: When dev-mode is enabled, your storage must use one of the schema validators at the top level. This is because most problems people have with RxDB is because they store data that is not valid to the schema which causes strange bugs and problems.
+Error code: DVM1
+Cause: The storage Adapter you use does not support schema validation.
+Fix:  Wrap your storage with a validator like wrappedValidateAjvStorage()
+Docs: https://rxdb.info/rx-storage.html?console=errors&code=DVM1
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#DVM1 
+
+--------------------
+Parameters:
+database: "kanban_db"
+storage: "dexie"
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-BVGDRGME.js?v=104ca896:3415:10)
+    at before (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:2281:17)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-KASAAUAO.js?v=104ca896:2372:37
+    at Array.forEach (<anonymous>)
+    at runPluginHooks (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-KASAAUAO.js?v=104ca896:2372:20)
+    at createRxDatabase (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-QWCG5VCW.js?v=104ca896:4064:3)
+    at getDatabase (http://localhost:4200/chunk-HLS5SXWJ.js:152:20)
+    at _AppStore.createDefaultUser (http://localhost:4200/chunk-5HJT3UEV.js:43:22)
+    at http://localhost:4200/main.js:53:25
+    at runInInjectionContext (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=104ca896:4872:12) @ http://localhost:4200/main.js:217
+[  774592ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=104ca896:6332
+[  774640ms] [LOG] Angular is running in development mode. @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=104ca896:17249
+[ 1041746ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:4200/@vite/client:864

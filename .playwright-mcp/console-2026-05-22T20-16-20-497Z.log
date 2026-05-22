@@ -1,0 +1,2857 @@
+[      44ms] [WARNING] -------------- RxDB dev-mode warning -------------------------------
+you are seeing this because you use the RxDB dev-mode plugin https://rxdb.info/dev-mode.html?console=dev-mode 
+This is great in development mode, because it will run many checks to ensure
+that you use RxDB correct. If you see this in production mode,
+you did something wrong because the dev-mode plugin will decrease the performance.
+
+🤗 Hint: To get the most out of RxDB, check out the Premium Plugins
+to get access to faster storages and more professional features: https://rxdb.info/premium/?console=dev-mode 
+
+You can disable this warning by calling disableWarnings() from the dev-mode plugin.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=783cb38b:2232
+[      74ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=783cb38b:6331
+[      74ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=783cb38b:6331
+[     108ms] [ERROR] ERROR RxError (DB6): 
+
+Error message: RxDatabase.addCollections(): another instance created this collection with a different schema. Read thishttps://rxdb.info/rx-schema.html?console=qa#faq 
+Error code: DB6
+Cause: The schema hash does not match the schema stored in the internal database.
+Fix: If you changed the schema, you must increment the version number. If not, check why the hash is different.
+Docs: https://rxdb.info/rx-schema.html?console=errors&code=DB6#faq
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#DB6 
+
+--------------------
+Parameters:
+database: "kanban_db"
+collection: "users"
+previousSchemaHash: "47cc9660e9fa2134edf55298dfb7a983544c17db291061ae89f2c25b44b0db35"
+schemaHash: "d9af58f97eba926b981238daa8ee8a0d7db2ba3d230cf5fdfcb384058789ca9d"
+previousSchema: {
+  "additionalProperties": false,
+  "encrypted": [],
+  "indexes": [
+    [
+      "_deleted",
+      "id"
+    ],
+    [
+      "_meta.lwt",
+      "id"
+    ]
+  ],
+  "keyCompression": false,
+  "primaryKey": "id",
+  "properties": {
+    "_attachments": {
+      "type": "object"
+    },
+    "_deleted": {
+      "type": "boolean"
+    },
+    "_meta": {
+      "additionalProperties": true,
+      "properties": {
+        "lwt": {
+          "maximum": 1000000000000000,
+          "minimum": 1,
+          "multipleOf": 0.01,
+          "type": "number"
+        }
+      },
+      "required": [
+        "lwt"
+      ],
+      "type": "object"
+    },
+    "_rev": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "id": {
+      "maxLength": 100,
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "createdAt",
+    "_deleted",
+    "_rev",
+    "_meta",
+    "_attachments"
+  ],
+  "title": "user schema",
+  "type": "object",
+  "version": 0
+}
+schema: {
+  "title": "user schema",
+  "version": 0,
+  "type": "object",
+  "primaryKey": "id",
+  "properties": {
+    "id": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "createdAt": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "createdAt"
+  ]
+}
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:237:10)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3863:17
+    at async Promise.all (index 0)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3852:7)
+    at async getDatabase (http://localhost:4200/chunk-GNMWCPAI.js:161:3)
+    at async _AppStore.loadCurrentUser (http://localhost:4200/chunk-WU4ID36R.js:33:16) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=783cb38b:5987
+[     113ms] [ERROR] ERROR RxError (DB6): 
+
+Error message: RxDatabase.addCollections(): another instance created this collection with a different schema. Read thishttps://rxdb.info/rx-schema.html?console=qa#faq 
+Error code: DB6
+Cause: The schema hash does not match the schema stored in the internal database.
+Fix: If you changed the schema, you must increment the version number. If not, check why the hash is different.
+Docs: https://rxdb.info/rx-schema.html?console=errors&code=DB6#faq
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#DB6 
+
+--------------------
+Parameters:
+database: "kanban_db"
+collection: "users"
+previousSchemaHash: "47cc9660e9fa2134edf55298dfb7a983544c17db291061ae89f2c25b44b0db35"
+schemaHash: "d9af58f97eba926b981238daa8ee8a0d7db2ba3d230cf5fdfcb384058789ca9d"
+previousSchema: {
+  "additionalProperties": false,
+  "encrypted": [],
+  "indexes": [
+    [
+      "_deleted",
+      "id"
+    ],
+    [
+      "_meta.lwt",
+      "id"
+    ]
+  ],
+  "keyCompression": false,
+  "primaryKey": "id",
+  "properties": {
+    "_attachments": {
+      "type": "object"
+    },
+    "_deleted": {
+      "type": "boolean"
+    },
+    "_meta": {
+      "additionalProperties": true,
+      "properties": {
+        "lwt": {
+          "maximum": 1000000000000000,
+          "minimum": 1,
+          "multipleOf": 0.01,
+          "type": "number"
+        }
+      },
+      "required": [
+        "lwt"
+      ],
+      "type": "object"
+    },
+    "_rev": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "id": {
+      "maxLength": 100,
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "createdAt",
+    "_deleted",
+    "_rev",
+    "_meta",
+    "_attachments"
+  ],
+  "title": "user schema",
+  "type": "object",
+  "version": 0
+}
+schema: {
+  "title": "user schema",
+  "version": 0,
+  "type": "object",
+  "primaryKey": "id",
+  "properties": {
+    "id": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "createdAt": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "createdAt"
+  ]
+}
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:237:10)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3863:17
+    at async Promise.all (index 0)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3852:7)
+    at async getDatabase (http://localhost:4200/chunk-GNMWCPAI.js:161:3)
+    at async _AppStore.createDefaultUser (http://localhost:4200/chunk-WU4ID36R.js:43:16)
+    at async Promise.all (index 0) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=783cb38b:5987
+[     114ms] [ERROR] RxError (DB6): 
+
+Error message: RxDatabase.addCollections(): another instance created this collection with a different schema. Read thishttps://rxdb.info/rx-schema.html?console=qa#faq 
+Error code: DB6
+Cause: The schema hash does not match the schema stored in the internal database.
+Fix: If you changed the schema, you must increment the version number. If not, check why the hash is different.
+Docs: https://rxdb.info/rx-schema.html?console=errors&code=DB6#faq
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#DB6 
+
+--------------------
+Parameters:
+database: "kanban_db"
+collection: "users"
+previousSchemaHash: "47cc9660e9fa2134edf55298dfb7a983544c17db291061ae89f2c25b44b0db35"
+schemaHash: "d9af58f97eba926b981238daa8ee8a0d7db2ba3d230cf5fdfcb384058789ca9d"
+previousSchema: {
+  "additionalProperties": false,
+  "encrypted": [],
+  "indexes": [
+    [
+      "_deleted",
+      "id"
+    ],
+    [
+      "_meta.lwt",
+      "id"
+    ]
+  ],
+  "keyCompression": false,
+  "primaryKey": "id",
+  "properties": {
+    "_attachments": {
+      "type": "object"
+    },
+    "_deleted": {
+      "type": "boolean"
+    },
+    "_meta": {
+      "additionalProperties": true,
+      "properties": {
+        "lwt": {
+          "maximum": 1000000000000000,
+          "minimum": 1,
+          "multipleOf": 0.01,
+          "type": "number"
+        }
+      },
+      "required": [
+        "lwt"
+      ],
+      "type": "object"
+    },
+    "_rev": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "id": {
+      "maxLength": 100,
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "createdAt",
+    "_deleted",
+    "_rev",
+    "_meta",
+    "_attachments"
+  ],
+  "title": "user schema",
+  "type": "object",
+  "version": 0
+}
+schema: {
+  "title": "user schema",
+  "version": 0,
+  "type": "object",
+  "primaryKey": "id",
+  "properties": {
+    "id": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "createdAt": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "createdAt"
+  ]
+}
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:237:10)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3863:17
+    at async Promise.all (index 0)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3852:7)
+    at async getDatabase (http://localhost:4200/chunk-GNMWCPAI.js:161:3)
+    at async _AppStore.createDefaultUser (http://localhost:4200/chunk-WU4ID36R.js:43:16)
+    at async Promise.all (index 0) @ http://localhost:4200/main.js:212
+[   18011ms] [WARNING] -------------- RxDB dev-mode warning -------------------------------
+you are seeing this because you use the RxDB dev-mode plugin https://rxdb.info/dev-mode.html?console=dev-mode 
+This is great in development mode, because it will run many checks to ensure
+that you use RxDB correct. If you see this in production mode,
+you did something wrong because the dev-mode plugin will decrease the performance.
+
+🤗 Hint: To get the most out of RxDB, check out the Premium Plugins
+to get access to faster storages and more professional features: https://rxdb.info/premium/?console=dev-mode 
+
+You can disable this warning by calling disableWarnings() from the dev-mode plugin.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=783cb38b:2232
+[   18041ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=783cb38b:6331
+[   18041ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=783cb38b:6331
+[   18088ms] [ERROR] ERROR RxError (DB6): 
+
+Error message: RxDatabase.addCollections(): another instance created this collection with a different schema. Read thishttps://rxdb.info/rx-schema.html?console=qa#faq 
+Error code: DB6
+Cause: The schema hash does not match the schema stored in the internal database.
+Fix: If you changed the schema, you must increment the version number. If not, check why the hash is different.
+Docs: https://rxdb.info/rx-schema.html?console=errors&code=DB6#faq
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#DB6 
+
+--------------------
+Parameters:
+database: "kanban_db"
+collection: "projects"
+previousSchemaHash: "3cbce6b66bbcd17eab7c8d9727454cf7152c5cec33aa8f05d1cd469f67eb653a"
+schemaHash: "be9eee1cf8bb24dc9282d8a436de904759109778a304ed77e0139c96ab71476c"
+previousSchema: {
+  "additionalProperties": false,
+  "encrypted": [],
+  "indexes": [
+    [
+      "_deleted",
+      "id"
+    ],
+    [
+      "_meta.lwt",
+      "id"
+    ]
+  ],
+  "keyCompression": false,
+  "primaryKey": "id",
+  "properties": {
+    "_attachments": {
+      "type": "object"
+    },
+    "_deleted": {
+      "type": "boolean"
+    },
+    "_meta": {
+      "additionalProperties": true,
+      "properties": {
+        "lwt": {
+          "maximum": 1000000000000000,
+          "minimum": 1,
+          "multipleOf": 0.01,
+          "type": "number"
+        }
+      },
+      "required": [
+        "lwt"
+      ],
+      "type": "object"
+    },
+    "_rev": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "id": {
+      "maxLength": 100,
+      "type": "string"
+    },
+    "modifiedAt": {
+      "type": "number"
+    },
+    "modifiedBy": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "description",
+    "createdAt",
+    "createdBy",
+    "modifiedAt",
+    "modifiedBy",
+    "_deleted",
+    "_rev",
+    "_meta",
+    "_attachments"
+  ],
+  "title": "project schema",
+  "type": "object",
+  "version": 0
+}
+schema: {
+  "title": "project schema",
+  "version": 0,
+  "type": "object",
+  "primaryKey": "id",
+  "properties": {
+    "id": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 5000
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "modifiedAt": {
+      "type": "number"
+    },
+    "modifiedBy": {
+      "type": "string",
+      "maxLength": 100
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "description",
+    "createdAt",
+    "createdBy",
+    "modifiedAt",
+    "modifiedBy"
+  ]
+}
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:237:10)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3863:17
+    at async Promise.all (index 1)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3852:7)
+    at async getDatabase (http://localhost:4200/chunk-TOXJLSAT.js:161:3)
+    at async _AppStore.createDefaultUser (http://localhost:4200/chunk-OJHGLHST.js:43:16)
+    at async Promise.all (index 0) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=783cb38b:5987
+[   18088ms] [ERROR] RxError (DB6): 
+
+Error message: RxDatabase.addCollections(): another instance created this collection with a different schema. Read thishttps://rxdb.info/rx-schema.html?console=qa#faq 
+Error code: DB6
+Cause: The schema hash does not match the schema stored in the internal database.
+Fix: If you changed the schema, you must increment the version number. If not, check why the hash is different.
+Docs: https://rxdb.info/rx-schema.html?console=errors&code=DB6#faq
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#DB6 
+
+--------------------
+Parameters:
+database: "kanban_db"
+collection: "projects"
+previousSchemaHash: "3cbce6b66bbcd17eab7c8d9727454cf7152c5cec33aa8f05d1cd469f67eb653a"
+schemaHash: "be9eee1cf8bb24dc9282d8a436de904759109778a304ed77e0139c96ab71476c"
+previousSchema: {
+  "additionalProperties": false,
+  "encrypted": [],
+  "indexes": [
+    [
+      "_deleted",
+      "id"
+    ],
+    [
+      "_meta.lwt",
+      "id"
+    ]
+  ],
+  "keyCompression": false,
+  "primaryKey": "id",
+  "properties": {
+    "_attachments": {
+      "type": "object"
+    },
+    "_deleted": {
+      "type": "boolean"
+    },
+    "_meta": {
+      "additionalProperties": true,
+      "properties": {
+        "lwt": {
+          "maximum": 1000000000000000,
+          "minimum": 1,
+          "multipleOf": 0.01,
+          "type": "number"
+        }
+      },
+      "required": [
+        "lwt"
+      ],
+      "type": "object"
+    },
+    "_rev": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "id": {
+      "maxLength": 100,
+      "type": "string"
+    },
+    "modifiedAt": {
+      "type": "number"
+    },
+    "modifiedBy": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "description",
+    "createdAt",
+    "createdBy",
+    "modifiedAt",
+    "modifiedBy",
+    "_deleted",
+    "_rev",
+    "_meta",
+    "_attachments"
+  ],
+  "title": "project schema",
+  "type": "object",
+  "version": 0
+}
+schema: {
+  "title": "project schema",
+  "version": 0,
+  "type": "object",
+  "primaryKey": "id",
+  "properties": {
+    "id": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 5000
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "modifiedAt": {
+      "type": "number"
+    },
+    "modifiedBy": {
+      "type": "string",
+      "maxLength": 100
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "description",
+    "createdAt",
+    "createdBy",
+    "modifiedAt",
+    "modifiedBy"
+  ]
+}
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:237:10)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3863:17
+    at async Promise.all (index 1)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3852:7)
+    at async getDatabase (http://localhost:4200/chunk-TOXJLSAT.js:161:3)
+    at async _AppStore.createDefaultUser (http://localhost:4200/chunk-OJHGLHST.js:43:16)
+    at async Promise.all (index 0) @ http://localhost:4200/main.js:212
+[   18088ms] [ERROR] ERROR RxError (DB6): 
+
+Error message: RxDatabase.addCollections(): another instance created this collection with a different schema. Read thishttps://rxdb.info/rx-schema.html?console=qa#faq 
+Error code: DB6
+Cause: The schema hash does not match the schema stored in the internal database.
+Fix: If you changed the schema, you must increment the version number. If not, check why the hash is different.
+Docs: https://rxdb.info/rx-schema.html?console=errors&code=DB6#faq
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#DB6 
+
+--------------------
+Parameters:
+database: "kanban_db"
+collection: "projects"
+previousSchemaHash: "3cbce6b66bbcd17eab7c8d9727454cf7152c5cec33aa8f05d1cd469f67eb653a"
+schemaHash: "be9eee1cf8bb24dc9282d8a436de904759109778a304ed77e0139c96ab71476c"
+previousSchema: {
+  "additionalProperties": false,
+  "encrypted": [],
+  "indexes": [
+    [
+      "_deleted",
+      "id"
+    ],
+    [
+      "_meta.lwt",
+      "id"
+    ]
+  ],
+  "keyCompression": false,
+  "primaryKey": "id",
+  "properties": {
+    "_attachments": {
+      "type": "object"
+    },
+    "_deleted": {
+      "type": "boolean"
+    },
+    "_meta": {
+      "additionalProperties": true,
+      "properties": {
+        "lwt": {
+          "maximum": 1000000000000000,
+          "minimum": 1,
+          "multipleOf": 0.01,
+          "type": "number"
+        }
+      },
+      "required": [
+        "lwt"
+      ],
+      "type": "object"
+    },
+    "_rev": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "id": {
+      "maxLength": 100,
+      "type": "string"
+    },
+    "modifiedAt": {
+      "type": "number"
+    },
+    "modifiedBy": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "description",
+    "createdAt",
+    "createdBy",
+    "modifiedAt",
+    "modifiedBy",
+    "_deleted",
+    "_rev",
+    "_meta",
+    "_attachments"
+  ],
+  "title": "project schema",
+  "type": "object",
+  "version": 0
+}
+schema: {
+  "title": "project schema",
+  "version": 0,
+  "type": "object",
+  "primaryKey": "id",
+  "properties": {
+    "id": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 5000
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "modifiedAt": {
+      "type": "number"
+    },
+    "modifiedBy": {
+      "type": "string",
+      "maxLength": 100
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "description",
+    "createdAt",
+    "createdBy",
+    "modifiedAt",
+    "modifiedBy"
+  ]
+}
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:237:10)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3863:17
+    at async Promise.all (index 0)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3852:7)
+    at async getDatabase (http://localhost:4200/chunk-TOXJLSAT.js:161:3)
+    at async _AppStore.loadCurrentUser (http://localhost:4200/chunk-OJHGLHST.js:33:16) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=783cb38b:5987
+[   23138ms] [WARNING] -------------- RxDB dev-mode warning -------------------------------
+you are seeing this because you use the RxDB dev-mode plugin https://rxdb.info/dev-mode.html?console=dev-mode 
+This is great in development mode, because it will run many checks to ensure
+that you use RxDB correct. If you see this in production mode,
+you did something wrong because the dev-mode plugin will decrease the performance.
+
+🤗 Hint: To get the most out of RxDB, check out the Premium Plugins
+to get access to faster storages and more professional features: https://rxdb.info/premium/?console=dev-mode 
+
+You can disable this warning by calling disableWarnings() from the dev-mode plugin.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=783cb38b:2232
+[   23162ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=783cb38b:6331
+[   23162ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=783cb38b:6331
+[   23205ms] [ERROR] ERROR RxError (DB6): 
+
+Error message: RxDatabase.addCollections(): another instance created this collection with a different schema. Read thishttps://rxdb.info/rx-schema.html?console=qa#faq 
+Error code: DB6
+Cause: The schema hash does not match the schema stored in the internal database.
+Fix: If you changed the schema, you must increment the version number. If not, check why the hash is different.
+Docs: https://rxdb.info/rx-schema.html?console=errors&code=DB6#faq
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#DB6 
+
+--------------------
+Parameters:
+database: "kanban_db"
+collection: "cards"
+previousSchemaHash: "7b5d3a326dcb620b6bf33bea8f6e1ef0fe17d36d2a4644a2e6a8720895bd3928"
+schemaHash: "390a319f79e6107e04ee788444adc6cfd8d4b268bf5544b5d532b893062c54f3"
+previousSchema: {
+  "additionalProperties": false,
+  "encrypted": [],
+  "indexes": [
+    [
+      "_deleted",
+      "projectId",
+      "id"
+    ],
+    [
+      "_deleted",
+      "status",
+      "id"
+    ],
+    [
+      "_meta.lwt",
+      "id"
+    ]
+  ],
+  "keyCompression": false,
+  "primaryKey": "id",
+  "properties": {
+    "_attachments": {
+      "type": "object"
+    },
+    "_deleted": {
+      "type": "boolean"
+    },
+    "_meta": {
+      "additionalProperties": true,
+      "properties": {
+        "lwt": {
+          "maximum": 1000000000000000,
+          "minimum": 1,
+          "multipleOf": 0.01,
+          "type": "number"
+        }
+      },
+      "required": [
+        "lwt"
+      ],
+      "type": "object"
+    },
+    "_rev": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "assigneeId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "checklist": {
+      "items": {
+        "properties": {
+          "completed": {
+            "type": "boolean"
+          },
+          "id": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "text",
+          "completed"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "id": {
+      "maxLength": 100,
+      "type": "string"
+    },
+    "labels": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "modifiedAt": {
+      "type": "number"
+    },
+    "modifiedBy": {
+      "type": "string"
+    },
+    "projectId": {
+      "maxLength": 100,
+      "type": "string"
+    },
+    "relatedCardIds": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "status": {
+      "enum": [
+        "new",
+        "active",
+        "ready_to_test",
+        "completed",
+        "closed"
+      ],
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "feature",
+        "task",
+        "bug"
+      ],
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "projectId",
+    "title",
+    "description",
+    "type",
+    "status",
+    "labels",
+    "checklist",
+    "relatedCardIds",
+    "createdAt",
+    "createdBy",
+    "modifiedAt",
+    "modifiedBy",
+    "_deleted",
+    "_rev",
+    "_meta",
+    "_attachments"
+  ],
+  "title": "card schema",
+  "type": "object",
+  "version": 0
+}
+schema: {
+  "title": "card schema",
+  "version": 0,
+  "type": "object",
+  "primaryKey": "id",
+  "properties": {
+    "id": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "projectId": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 5000
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "feature",
+        "task",
+        "bug"
+      ],
+      "maxLength": 20
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "active",
+        "ready_to_test",
+        "completed",
+        "closed"
+      ],
+      "maxLength": 20
+    },
+    "assigneeId": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 100
+    },
+    "labels": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 50
+      }
+    },
+    "checklist": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "maxLength": 100
+          },
+          "text": {
+            "type": "string",
+            "maxLength": 500
+          },
+          "completed": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "text",
+          "completed"
+        ]
+      }
+    },
+    "relatedCardIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 100
+      }
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "modifiedAt": {
+      "type": "number"
+    },
+    "modifiedBy": {
+      "type": "string",
+      "maxLength": 100
+    }
+  },
+  "required": [
+    "id",
+    "projectId",
+    "title",
+    "description",
+    "type",
+    "status",
+    "labels",
+    "checklist",
+    "relatedCardIds",
+    "createdAt",
+    "createdBy",
+    "modifiedAt",
+    "modifiedBy"
+  ],
+  "indexes": [
+    "projectId",
+    "status"
+  ]
+}
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:237:10)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3863:17
+    at async Promise.all (index 2)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3852:7)
+    at async getDatabase (http://localhost:4200/chunk-RCYCBNGX.js:161:3)
+    at async _AppStore.createDefaultUser (http://localhost:4200/chunk-QOM35IWJ.js:43:16)
+    at async Promise.all (index 0) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=783cb38b:5987
+[   23205ms] [ERROR] RxError (DB6): 
+
+Error message: RxDatabase.addCollections(): another instance created this collection with a different schema. Read thishttps://rxdb.info/rx-schema.html?console=qa#faq 
+Error code: DB6
+Cause: The schema hash does not match the schema stored in the internal database.
+Fix: If you changed the schema, you must increment the version number. If not, check why the hash is different.
+Docs: https://rxdb.info/rx-schema.html?console=errors&code=DB6#faq
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#DB6 
+
+--------------------
+Parameters:
+database: "kanban_db"
+collection: "cards"
+previousSchemaHash: "7b5d3a326dcb620b6bf33bea8f6e1ef0fe17d36d2a4644a2e6a8720895bd3928"
+schemaHash: "390a319f79e6107e04ee788444adc6cfd8d4b268bf5544b5d532b893062c54f3"
+previousSchema: {
+  "additionalProperties": false,
+  "encrypted": [],
+  "indexes": [
+    [
+      "_deleted",
+      "projectId",
+      "id"
+    ],
+    [
+      "_deleted",
+      "status",
+      "id"
+    ],
+    [
+      "_meta.lwt",
+      "id"
+    ]
+  ],
+  "keyCompression": false,
+  "primaryKey": "id",
+  "properties": {
+    "_attachments": {
+      "type": "object"
+    },
+    "_deleted": {
+      "type": "boolean"
+    },
+    "_meta": {
+      "additionalProperties": true,
+      "properties": {
+        "lwt": {
+          "maximum": 1000000000000000,
+          "minimum": 1,
+          "multipleOf": 0.01,
+          "type": "number"
+        }
+      },
+      "required": [
+        "lwt"
+      ],
+      "type": "object"
+    },
+    "_rev": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "assigneeId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "checklist": {
+      "items": {
+        "properties": {
+          "completed": {
+            "type": "boolean"
+          },
+          "id": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "text",
+          "completed"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "id": {
+      "maxLength": 100,
+      "type": "string"
+    },
+    "labels": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "modifiedAt": {
+      "type": "number"
+    },
+    "modifiedBy": {
+      "type": "string"
+    },
+    "projectId": {
+      "maxLength": 100,
+      "type": "string"
+    },
+    "relatedCardIds": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "status": {
+      "enum": [
+        "new",
+        "active",
+        "ready_to_test",
+        "completed",
+        "closed"
+      ],
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "feature",
+        "task",
+        "bug"
+      ],
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "projectId",
+    "title",
+    "description",
+    "type",
+    "status",
+    "labels",
+    "checklist",
+    "relatedCardIds",
+    "createdAt",
+    "createdBy",
+    "modifiedAt",
+    "modifiedBy",
+    "_deleted",
+    "_rev",
+    "_meta",
+    "_attachments"
+  ],
+  "title": "card schema",
+  "type": "object",
+  "version": 0
+}
+schema: {
+  "title": "card schema",
+  "version": 0,
+  "type": "object",
+  "primaryKey": "id",
+  "properties": {
+    "id": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "projectId": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 5000
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "feature",
+        "task",
+        "bug"
+      ],
+      "maxLength": 20
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "active",
+        "ready_to_test",
+        "completed",
+        "closed"
+      ],
+      "maxLength": 20
+    },
+    "assigneeId": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 100
+    },
+    "labels": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 50
+      }
+    },
+    "checklist": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "maxLength": 100
+          },
+          "text": {
+            "type": "string",
+            "maxLength": 500
+          },
+          "completed": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "text",
+          "completed"
+        ]
+      }
+    },
+    "relatedCardIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 100
+      }
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "modifiedAt": {
+      "type": "number"
+    },
+    "modifiedBy": {
+      "type": "string",
+      "maxLength": 100
+    }
+  },
+  "required": [
+    "id",
+    "projectId",
+    "title",
+    "description",
+    "type",
+    "status",
+    "labels",
+    "checklist",
+    "relatedCardIds",
+    "createdAt",
+    "createdBy",
+    "modifiedAt",
+    "modifiedBy"
+  ],
+  "indexes": [
+    "projectId",
+    "status"
+  ]
+}
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:237:10)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3863:17
+    at async Promise.all (index 2)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3852:7)
+    at async getDatabase (http://localhost:4200/chunk-RCYCBNGX.js:161:3)
+    at async _AppStore.createDefaultUser (http://localhost:4200/chunk-QOM35IWJ.js:43:16)
+    at async Promise.all (index 0) @ http://localhost:4200/main.js:212
+[   23206ms] [ERROR] ERROR RxError (DB6): 
+
+Error message: RxDatabase.addCollections(): another instance created this collection with a different schema. Read thishttps://rxdb.info/rx-schema.html?console=qa#faq 
+Error code: DB6
+Cause: The schema hash does not match the schema stored in the internal database.
+Fix: If you changed the schema, you must increment the version number. If not, check why the hash is different.
+Docs: https://rxdb.info/rx-schema.html?console=errors&code=DB6#faq
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#DB6 
+
+--------------------
+Parameters:
+database: "kanban_db"
+collection: "cards"
+previousSchemaHash: "7b5d3a326dcb620b6bf33bea8f6e1ef0fe17d36d2a4644a2e6a8720895bd3928"
+schemaHash: "390a319f79e6107e04ee788444adc6cfd8d4b268bf5544b5d532b893062c54f3"
+previousSchema: {
+  "additionalProperties": false,
+  "encrypted": [],
+  "indexes": [
+    [
+      "_deleted",
+      "projectId",
+      "id"
+    ],
+    [
+      "_deleted",
+      "status",
+      "id"
+    ],
+    [
+      "_meta.lwt",
+      "id"
+    ]
+  ],
+  "keyCompression": false,
+  "primaryKey": "id",
+  "properties": {
+    "_attachments": {
+      "type": "object"
+    },
+    "_deleted": {
+      "type": "boolean"
+    },
+    "_meta": {
+      "additionalProperties": true,
+      "properties": {
+        "lwt": {
+          "maximum": 1000000000000000,
+          "minimum": 1,
+          "multipleOf": 0.01,
+          "type": "number"
+        }
+      },
+      "required": [
+        "lwt"
+      ],
+      "type": "object"
+    },
+    "_rev": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "assigneeId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "checklist": {
+      "items": {
+        "properties": {
+          "completed": {
+            "type": "boolean"
+          },
+          "id": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "text",
+          "completed"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "id": {
+      "maxLength": 100,
+      "type": "string"
+    },
+    "labels": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "modifiedAt": {
+      "type": "number"
+    },
+    "modifiedBy": {
+      "type": "string"
+    },
+    "projectId": {
+      "maxLength": 100,
+      "type": "string"
+    },
+    "relatedCardIds": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "status": {
+      "enum": [
+        "new",
+        "active",
+        "ready_to_test",
+        "completed",
+        "closed"
+      ],
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "feature",
+        "task",
+        "bug"
+      ],
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "projectId",
+    "title",
+    "description",
+    "type",
+    "status",
+    "labels",
+    "checklist",
+    "relatedCardIds",
+    "createdAt",
+    "createdBy",
+    "modifiedAt",
+    "modifiedBy",
+    "_deleted",
+    "_rev",
+    "_meta",
+    "_attachments"
+  ],
+  "title": "card schema",
+  "type": "object",
+  "version": 0
+}
+schema: {
+  "title": "card schema",
+  "version": 0,
+  "type": "object",
+  "primaryKey": "id",
+  "properties": {
+    "id": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "projectId": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 5000
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "feature",
+        "task",
+        "bug"
+      ],
+      "maxLength": 20
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "active",
+        "ready_to_test",
+        "completed",
+        "closed"
+      ],
+      "maxLength": 20
+    },
+    "assigneeId": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 100
+    },
+    "labels": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 50
+      }
+    },
+    "checklist": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "maxLength": 100
+          },
+          "text": {
+            "type": "string",
+            "maxLength": 500
+          },
+          "completed": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "text",
+          "completed"
+        ]
+      }
+    },
+    "relatedCardIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 100
+      }
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "modifiedAt": {
+      "type": "number"
+    },
+    "modifiedBy": {
+      "type": "string",
+      "maxLength": 100
+    }
+  },
+  "required": [
+    "id",
+    "projectId",
+    "title",
+    "description",
+    "type",
+    "status",
+    "labels",
+    "checklist",
+    "relatedCardIds",
+    "createdAt",
+    "createdBy",
+    "modifiedAt",
+    "modifiedBy"
+  ],
+  "indexes": [
+    "projectId",
+    "status"
+  ]
+}
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:237:10)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3863:17
+    at async Promise.all (index 1)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3852:7)
+    at async getDatabase (http://localhost:4200/chunk-RCYCBNGX.js:161:3)
+    at async _AppStore.loadCurrentUser (http://localhost:4200/chunk-QOM35IWJ.js:33:16) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=783cb38b:5987
+[   32174ms] [WARNING] -------------- RxDB dev-mode warning -------------------------------
+you are seeing this because you use the RxDB dev-mode plugin https://rxdb.info/dev-mode.html?console=dev-mode 
+This is great in development mode, because it will run many checks to ensure
+that you use RxDB correct. If you see this in production mode,
+you did something wrong because the dev-mode plugin will decrease the performance.
+
+🤗 Hint: To get the most out of RxDB, check out the Premium Plugins
+to get access to faster storages and more professional features: https://rxdb.info/premium/?console=dev-mode 
+
+You can disable this warning by calling disableWarnings() from the dev-mode plugin.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=783cb38b:2232
+[   32201ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=783cb38b:6331
+[   32201ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=783cb38b:6331
+[   32243ms] [ERROR] ERROR RxError (DB6): 
+
+Error message: RxDatabase.addCollections(): another instance created this collection with a different schema. Read thishttps://rxdb.info/rx-schema.html?console=qa#faq 
+Error code: DB6
+Cause: The schema hash does not match the schema stored in the internal database.
+Fix: If you changed the schema, you must increment the version number. If not, check why the hash is different.
+Docs: https://rxdb.info/rx-schema.html?console=errors&code=DB6#faq
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#DB6 
+
+--------------------
+Parameters:
+database: "kanban_db"
+collection: "comments"
+previousSchemaHash: "f4818790bae0c1d71ac0bbb99bca2a73036d052b7948060c8de202640d99c569"
+schemaHash: "07158d3bbc348d4fa8b54e237f642540f6c9f9235597420dca2044bd533d5569"
+previousSchema: {
+  "additionalProperties": false,
+  "encrypted": [],
+  "indexes": [
+    [
+      "_deleted",
+      "cardId",
+      "id"
+    ],
+    [
+      "_meta.lwt",
+      "id"
+    ]
+  ],
+  "keyCompression": false,
+  "primaryKey": "id",
+  "properties": {
+    "_attachments": {
+      "type": "object"
+    },
+    "_deleted": {
+      "type": "boolean"
+    },
+    "_meta": {
+      "additionalProperties": true,
+      "properties": {
+        "lwt": {
+          "maximum": 1000000000000000,
+          "minimum": 1,
+          "multipleOf": 0.01,
+          "type": "number"
+        }
+      },
+      "required": [
+        "lwt"
+      ],
+      "type": "object"
+    },
+    "_rev": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "cardId": {
+      "maxLength": 100,
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string"
+    },
+    "id": {
+      "maxLength": 100,
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "cardId",
+    "text",
+    "createdAt",
+    "createdBy",
+    "_deleted",
+    "_rev",
+    "_meta",
+    "_attachments"
+  ],
+  "title": "comment schema",
+  "type": "object",
+  "version": 0
+}
+schema: {
+  "title": "comment schema",
+  "version": 0,
+  "type": "object",
+  "primaryKey": "id",
+  "properties": {
+    "id": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "cardId": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "text": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string",
+      "maxLength": 100
+    }
+  },
+  "required": [
+    "id",
+    "cardId",
+    "text",
+    "createdAt",
+    "createdBy"
+  ],
+  "indexes": [
+    "cardId"
+  ]
+}
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:237:10)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3863:17
+    at async Promise.all (index 3)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3852:7)
+    at async getDatabase (http://localhost:4200/chunk-BFTCHP63.js:161:3)
+    at async _AppStore.createDefaultUser (http://localhost:4200/chunk-FS5E7UI5.js:43:16)
+    at async Promise.all (index 0) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=783cb38b:5987
+[   32244ms] [ERROR] RxError (DB6): 
+
+Error message: RxDatabase.addCollections(): another instance created this collection with a different schema. Read thishttps://rxdb.info/rx-schema.html?console=qa#faq 
+Error code: DB6
+Cause: The schema hash does not match the schema stored in the internal database.
+Fix: If you changed the schema, you must increment the version number. If not, check why the hash is different.
+Docs: https://rxdb.info/rx-schema.html?console=errors&code=DB6#faq
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#DB6 
+
+--------------------
+Parameters:
+database: "kanban_db"
+collection: "comments"
+previousSchemaHash: "f4818790bae0c1d71ac0bbb99bca2a73036d052b7948060c8de202640d99c569"
+schemaHash: "07158d3bbc348d4fa8b54e237f642540f6c9f9235597420dca2044bd533d5569"
+previousSchema: {
+  "additionalProperties": false,
+  "encrypted": [],
+  "indexes": [
+    [
+      "_deleted",
+      "cardId",
+      "id"
+    ],
+    [
+      "_meta.lwt",
+      "id"
+    ]
+  ],
+  "keyCompression": false,
+  "primaryKey": "id",
+  "properties": {
+    "_attachments": {
+      "type": "object"
+    },
+    "_deleted": {
+      "type": "boolean"
+    },
+    "_meta": {
+      "additionalProperties": true,
+      "properties": {
+        "lwt": {
+          "maximum": 1000000000000000,
+          "minimum": 1,
+          "multipleOf": 0.01,
+          "type": "number"
+        }
+      },
+      "required": [
+        "lwt"
+      ],
+      "type": "object"
+    },
+    "_rev": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "cardId": {
+      "maxLength": 100,
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string"
+    },
+    "id": {
+      "maxLength": 100,
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "cardId",
+    "text",
+    "createdAt",
+    "createdBy",
+    "_deleted",
+    "_rev",
+    "_meta",
+    "_attachments"
+  ],
+  "title": "comment schema",
+  "type": "object",
+  "version": 0
+}
+schema: {
+  "title": "comment schema",
+  "version": 0,
+  "type": "object",
+  "primaryKey": "id",
+  "properties": {
+    "id": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "cardId": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "text": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string",
+      "maxLength": 100
+    }
+  },
+  "required": [
+    "id",
+    "cardId",
+    "text",
+    "createdAt",
+    "createdBy"
+  ],
+  "indexes": [
+    "cardId"
+  ]
+}
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:237:10)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3863:17
+    at async Promise.all (index 3)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3852:7)
+    at async getDatabase (http://localhost:4200/chunk-BFTCHP63.js:161:3)
+    at async _AppStore.createDefaultUser (http://localhost:4200/chunk-FS5E7UI5.js:43:16)
+    at async Promise.all (index 0) @ http://localhost:4200/main.js:212
+[   32245ms] [ERROR] ERROR RxError (DB6): 
+
+Error message: RxDatabase.addCollections(): another instance created this collection with a different schema. Read thishttps://rxdb.info/rx-schema.html?console=qa#faq 
+Error code: DB6
+Cause: The schema hash does not match the schema stored in the internal database.
+Fix: If you changed the schema, you must increment the version number. If not, check why the hash is different.
+Docs: https://rxdb.info/rx-schema.html?console=errors&code=DB6#faq
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#DB6 
+
+--------------------
+Parameters:
+database: "kanban_db"
+collection: "comments"
+previousSchemaHash: "f4818790bae0c1d71ac0bbb99bca2a73036d052b7948060c8de202640d99c569"
+schemaHash: "07158d3bbc348d4fa8b54e237f642540f6c9f9235597420dca2044bd533d5569"
+previousSchema: {
+  "additionalProperties": false,
+  "encrypted": [],
+  "indexes": [
+    [
+      "_deleted",
+      "cardId",
+      "id"
+    ],
+    [
+      "_meta.lwt",
+      "id"
+    ]
+  ],
+  "keyCompression": false,
+  "primaryKey": "id",
+  "properties": {
+    "_attachments": {
+      "type": "object"
+    },
+    "_deleted": {
+      "type": "boolean"
+    },
+    "_meta": {
+      "additionalProperties": true,
+      "properties": {
+        "lwt": {
+          "maximum": 1000000000000000,
+          "minimum": 1,
+          "multipleOf": 0.01,
+          "type": "number"
+        }
+      },
+      "required": [
+        "lwt"
+      ],
+      "type": "object"
+    },
+    "_rev": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "cardId": {
+      "maxLength": 100,
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string"
+    },
+    "id": {
+      "maxLength": 100,
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "cardId",
+    "text",
+    "createdAt",
+    "createdBy",
+    "_deleted",
+    "_rev",
+    "_meta",
+    "_attachments"
+  ],
+  "title": "comment schema",
+  "type": "object",
+  "version": 0
+}
+schema: {
+  "title": "comment schema",
+  "version": 0,
+  "type": "object",
+  "primaryKey": "id",
+  "properties": {
+    "id": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "cardId": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "text": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string",
+      "maxLength": 100
+    }
+  },
+  "required": [
+    "id",
+    "cardId",
+    "text",
+    "createdAt",
+    "createdBy"
+  ],
+  "indexes": [
+    "cardId"
+  ]
+}
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:237:10)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3863:17
+    at async Promise.all (index 2)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3852:7)
+    at async getDatabase (http://localhost:4200/chunk-BFTCHP63.js:161:3)
+    at async _AppStore.loadCurrentUser (http://localhost:4200/chunk-FS5E7UI5.js:33:16) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=783cb38b:5987
+[   36485ms] [WARNING] -------------- RxDB dev-mode warning -------------------------------
+you are seeing this because you use the RxDB dev-mode plugin https://rxdb.info/dev-mode.html?console=dev-mode 
+This is great in development mode, because it will run many checks to ensure
+that you use RxDB correct. If you see this in production mode,
+you did something wrong because the dev-mode plugin will decrease the performance.
+
+🤗 Hint: To get the most out of RxDB, check out the Premium Plugins
+to get access to faster storages and more professional features: https://rxdb.info/premium/?console=dev-mode 
+
+You can disable this warning by calling disableWarnings() from the dev-mode plugin.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=783cb38b:2232
+[   36512ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=783cb38b:6331
+[   36512ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=783cb38b:6331
+[   36556ms] [ERROR] ERROR RxError (DB6): 
+
+Error message: RxDatabase.addCollections(): another instance created this collection with a different schema. Read thishttps://rxdb.info/rx-schema.html?console=qa#faq 
+Error code: DB6
+Cause: The schema hash does not match the schema stored in the internal database.
+Fix: If you changed the schema, you must increment the version number. If not, check why the hash is different.
+Docs: https://rxdb.info/rx-schema.html?console=errors&code=DB6#faq
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#DB6 
+
+--------------------
+Parameters:
+database: "kanban_db"
+collection: "wikiPages"
+previousSchemaHash: "e0a1c36234e56c8a36a5adbd61f4429c58e31f9ecff7a315c83d02ab92c8a516"
+schemaHash: "011ee78abb4b436831cb9a870a8e8bb5360c17b8d9a497840b3aeb3e0972d6af"
+previousSchema: {
+  "additionalProperties": false,
+  "encrypted": [],
+  "indexes": [
+    [
+      "_deleted",
+      "projectId",
+      "id"
+    ],
+    [
+      "_meta.lwt",
+      "id"
+    ]
+  ],
+  "keyCompression": false,
+  "primaryKey": "id",
+  "properties": {
+    "_attachments": {
+      "type": "object"
+    },
+    "_deleted": {
+      "type": "boolean"
+    },
+    "_meta": {
+      "additionalProperties": true,
+      "properties": {
+        "lwt": {
+          "maximum": 1000000000000000,
+          "minimum": 1,
+          "multipleOf": 0.01,
+          "type": "number"
+        }
+      },
+      "required": [
+        "lwt"
+      ],
+      "type": "object"
+    },
+    "_rev": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string"
+    },
+    "id": {
+      "maxLength": 100,
+      "type": "string"
+    },
+    "modifiedAt": {
+      "type": "number"
+    },
+    "modifiedBy": {
+      "type": "string"
+    },
+    "projectId": {
+      "maxLength": 100,
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "projectId",
+    "title",
+    "content",
+    "createdAt",
+    "createdBy",
+    "modifiedAt",
+    "modifiedBy",
+    "_deleted",
+    "_rev",
+    "_meta",
+    "_attachments"
+  ],
+  "title": "wiki page schema",
+  "type": "object",
+  "version": 0
+}
+schema: {
+  "title": "wiki page schema",
+  "version": 0,
+  "type": "object",
+  "primaryKey": "id",
+  "properties": {
+    "id": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "projectId": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "content": {
+      "type": "string",
+      "maxLength": 50000
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "modifiedAt": {
+      "type": "number"
+    },
+    "modifiedBy": {
+      "type": "string",
+      "maxLength": 100
+    }
+  },
+  "required": [
+    "id",
+    "projectId",
+    "title",
+    "content",
+    "createdAt",
+    "createdBy",
+    "modifiedAt",
+    "modifiedBy"
+  ],
+  "indexes": [
+    "projectId"
+  ]
+}
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:237:10)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3863:17
+    at async Promise.all (index 4)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3852:7)
+    at async getDatabase (http://localhost:4200/chunk-TOLM44JE.js:161:3)
+    at async _AppStore.createDefaultUser (http://localhost:4200/chunk-Y7PNSGNX.js:43:16)
+    at async Promise.all (index 0) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=783cb38b:5987
+[   36556ms] [ERROR] RxError (DB6): 
+
+Error message: RxDatabase.addCollections(): another instance created this collection with a different schema. Read thishttps://rxdb.info/rx-schema.html?console=qa#faq 
+Error code: DB6
+Cause: The schema hash does not match the schema stored in the internal database.
+Fix: If you changed the schema, you must increment the version number. If not, check why the hash is different.
+Docs: https://rxdb.info/rx-schema.html?console=errors&code=DB6#faq
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#DB6 
+
+--------------------
+Parameters:
+database: "kanban_db"
+collection: "wikiPages"
+previousSchemaHash: "e0a1c36234e56c8a36a5adbd61f4429c58e31f9ecff7a315c83d02ab92c8a516"
+schemaHash: "011ee78abb4b436831cb9a870a8e8bb5360c17b8d9a497840b3aeb3e0972d6af"
+previousSchema: {
+  "additionalProperties": false,
+  "encrypted": [],
+  "indexes": [
+    [
+      "_deleted",
+      "projectId",
+      "id"
+    ],
+    [
+      "_meta.lwt",
+      "id"
+    ]
+  ],
+  "keyCompression": false,
+  "primaryKey": "id",
+  "properties": {
+    "_attachments": {
+      "type": "object"
+    },
+    "_deleted": {
+      "type": "boolean"
+    },
+    "_meta": {
+      "additionalProperties": true,
+      "properties": {
+        "lwt": {
+          "maximum": 1000000000000000,
+          "minimum": 1,
+          "multipleOf": 0.01,
+          "type": "number"
+        }
+      },
+      "required": [
+        "lwt"
+      ],
+      "type": "object"
+    },
+    "_rev": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string"
+    },
+    "id": {
+      "maxLength": 100,
+      "type": "string"
+    },
+    "modifiedAt": {
+      "type": "number"
+    },
+    "modifiedBy": {
+      "type": "string"
+    },
+    "projectId": {
+      "maxLength": 100,
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "projectId",
+    "title",
+    "content",
+    "createdAt",
+    "createdBy",
+    "modifiedAt",
+    "modifiedBy",
+    "_deleted",
+    "_rev",
+    "_meta",
+    "_attachments"
+  ],
+  "title": "wiki page schema",
+  "type": "object",
+  "version": 0
+}
+schema: {
+  "title": "wiki page schema",
+  "version": 0,
+  "type": "object",
+  "primaryKey": "id",
+  "properties": {
+    "id": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "projectId": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "content": {
+      "type": "string",
+      "maxLength": 50000
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "modifiedAt": {
+      "type": "number"
+    },
+    "modifiedBy": {
+      "type": "string",
+      "maxLength": 100
+    }
+  },
+  "required": [
+    "id",
+    "projectId",
+    "title",
+    "content",
+    "createdAt",
+    "createdBy",
+    "modifiedAt",
+    "modifiedBy"
+  ],
+  "indexes": [
+    "projectId"
+  ]
+}
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:237:10)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3863:17
+    at async Promise.all (index 4)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3852:7)
+    at async getDatabase (http://localhost:4200/chunk-TOLM44JE.js:161:3)
+    at async _AppStore.createDefaultUser (http://localhost:4200/chunk-Y7PNSGNX.js:43:16)
+    at async Promise.all (index 0) @ http://localhost:4200/main.js:212
+[   36557ms] [ERROR] ERROR RxError (DB6): 
+
+Error message: RxDatabase.addCollections(): another instance created this collection with a different schema. Read thishttps://rxdb.info/rx-schema.html?console=qa#faq 
+Error code: DB6
+Cause: The schema hash does not match the schema stored in the internal database.
+Fix: If you changed the schema, you must increment the version number. If not, check why the hash is different.
+Docs: https://rxdb.info/rx-schema.html?console=errors&code=DB6#faq
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#DB6 
+
+--------------------
+Parameters:
+database: "kanban_db"
+collection: "wikiPages"
+previousSchemaHash: "e0a1c36234e56c8a36a5adbd61f4429c58e31f9ecff7a315c83d02ab92c8a516"
+schemaHash: "011ee78abb4b436831cb9a870a8e8bb5360c17b8d9a497840b3aeb3e0972d6af"
+previousSchema: {
+  "additionalProperties": false,
+  "encrypted": [],
+  "indexes": [
+    [
+      "_deleted",
+      "projectId",
+      "id"
+    ],
+    [
+      "_meta.lwt",
+      "id"
+    ]
+  ],
+  "keyCompression": false,
+  "primaryKey": "id",
+  "properties": {
+    "_attachments": {
+      "type": "object"
+    },
+    "_deleted": {
+      "type": "boolean"
+    },
+    "_meta": {
+      "additionalProperties": true,
+      "properties": {
+        "lwt": {
+          "maximum": 1000000000000000,
+          "minimum": 1,
+          "multipleOf": 0.01,
+          "type": "number"
+        }
+      },
+      "required": [
+        "lwt"
+      ],
+      "type": "object"
+    },
+    "_rev": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string"
+    },
+    "id": {
+      "maxLength": 100,
+      "type": "string"
+    },
+    "modifiedAt": {
+      "type": "number"
+    },
+    "modifiedBy": {
+      "type": "string"
+    },
+    "projectId": {
+      "maxLength": 100,
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "projectId",
+    "title",
+    "content",
+    "createdAt",
+    "createdBy",
+    "modifiedAt",
+    "modifiedBy",
+    "_deleted",
+    "_rev",
+    "_meta",
+    "_attachments"
+  ],
+  "title": "wiki page schema",
+  "type": "object",
+  "version": 0
+}
+schema: {
+  "title": "wiki page schema",
+  "version": 0,
+  "type": "object",
+  "primaryKey": "id",
+  "properties": {
+    "id": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "projectId": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "content": {
+      "type": "string",
+      "maxLength": 50000
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "modifiedAt": {
+      "type": "number"
+    },
+    "modifiedBy": {
+      "type": "string",
+      "maxLength": 100
+    }
+  },
+  "required": [
+    "id",
+    "projectId",
+    "title",
+    "content",
+    "createdAt",
+    "createdBy",
+    "modifiedAt",
+    "modifiedBy"
+  ],
+  "indexes": [
+    "projectId"
+  ]
+}
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:237:10)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3863:17
+    at async Promise.all (index 3)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3852:7)
+    at async getDatabase (http://localhost:4200/chunk-TOLM44JE.js:161:3)
+    at async _AppStore.loadCurrentUser (http://localhost:4200/chunk-Y7PNSGNX.js:33:16) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=783cb38b:5987
+[   41017ms] [WARNING] -------------- RxDB dev-mode warning -------------------------------
+you are seeing this because you use the RxDB dev-mode plugin https://rxdb.info/dev-mode.html?console=dev-mode 
+This is great in development mode, because it will run many checks to ensure
+that you use RxDB correct. If you see this in production mode,
+you did something wrong because the dev-mode plugin will decrease the performance.
+
+🤗 Hint: To get the most out of RxDB, check out the Premium Plugins
+to get access to faster storages and more professional features: https://rxdb.info/premium/?console=dev-mode 
+
+You can disable this warning by calling disableWarnings() from the dev-mode plugin.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=783cb38b:2232
+[   41045ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=783cb38b:6331
+[   41045ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=783cb38b:6331
+[   41088ms] [ERROR] ERROR RxError (COL12): 
+
+Error message: A migrationStrategy is missing or too much
+Error code: COL12
+Cause: The number of migration strategies does not match the schema version difference.
+Fix: Ensure you have a migration strategy for every version step.
+Docs: https://rxdb.info/migration-schema.html?console=errors&code=COL12
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#COL12 
+
+--------------------
+Parameters:
+have: []
+should: [
+  0
+]
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:237:10)
+    at checkMigrationStrategies (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=783cb38b:1851:11)
+    at after (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=783cb38b:2343:11)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-BAQBE4B6.js?v=783cb38b:2372:37
+    at Array.forEach (<anonymous>)
+    at runPluginHooks (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-BAQBE4B6.js?v=783cb38b:2372:20)
+    at createRxCollection (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3492:5)
+    at async http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3882:24
+    at async Promise.all (index 0)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3879:5) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=783cb38b:5987
+[   41093ms] [ERROR] ERROR RxError (COL12): 
+
+Error message: A migrationStrategy is missing or too much
+Error code: COL12
+Cause: The number of migration strategies does not match the schema version difference.
+Fix: Ensure you have a migration strategy for every version step.
+Docs: https://rxdb.info/migration-schema.html?console=errors&code=COL12
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#COL12 
+
+--------------------
+Parameters:
+have: []
+should: [
+  0
+]
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:237:10)
+    at checkMigrationStrategies (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=783cb38b:1851:11)
+    at after (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=783cb38b:2343:11)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-BAQBE4B6.js?v=783cb38b:2372:37
+    at Array.forEach (<anonymous>)
+    at runPluginHooks (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-BAQBE4B6.js?v=783cb38b:2372:20)
+    at createRxCollection (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3492:5)
+    at async http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3882:24
+    at async Promise.all (index 0)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3879:5) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=783cb38b:5987
+[   41093ms] [ERROR] RxError (COL12): 
+
+Error message: A migrationStrategy is missing or too much
+Error code: COL12
+Cause: The number of migration strategies does not match the schema version difference.
+Fix: Ensure you have a migration strategy for every version step.
+Docs: https://rxdb.info/migration-schema.html?console=errors&code=COL12
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#COL12 
+
+--------------------
+Parameters:
+have: []
+should: [
+  0
+]
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:237:10)
+    at checkMigrationStrategies (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=783cb38b:1851:11)
+    at after (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=783cb38b:2343:11)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-BAQBE4B6.js?v=783cb38b:2372:37
+    at Array.forEach (<anonymous>)
+    at runPluginHooks (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-BAQBE4B6.js?v=783cb38b:2372:20)
+    at createRxCollection (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3492:5)
+    at async http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3882:24
+    at async Promise.all (index 0)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3879:5) @ http://localhost:4200/main.js:212
+[   54173ms] [WARNING] -------------- RxDB dev-mode warning -------------------------------
+you are seeing this because you use the RxDB dev-mode plugin https://rxdb.info/dev-mode.html?console=dev-mode 
+This is great in development mode, because it will run many checks to ensure
+that you use RxDB correct. If you see this in production mode,
+you did something wrong because the dev-mode plugin will decrease the performance.
+
+🤗 Hint: To get the most out of RxDB, check out the Premium Plugins
+to get access to faster storages and more professional features: https://rxdb.info/premium/?console=dev-mode 
+
+You can disable this warning by calling disableWarnings() from the dev-mode plugin.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=783cb38b:2232
+[   54211ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=783cb38b:6331
+[   54211ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=783cb38b:6331
+[   54231ms] [ERROR] ERROR Error: You are using a function which must be overwritten by a plugin.
+        You should either prevent the usage of this function or add the plugin via:
+            import { RxDBMigrationSchemaPlugin } from 'rxdb/plugins/migration-schema';
+            addRxPlugin(RxDBMigrationSchemaPlugin);
+        
+    at pluginMissing (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:1335:10)
+    at RxCollectionBase2.getMigrationState (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:2901:11)
+    at RxCollectionBase2.migratePromise (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:2908:17)
+    at createRxCollection (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3509:24)
+    at async http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3882:24
+    at async Promise.all (index 0)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3879:5)
+    at async getDatabase (http://localhost:4200/chunk-NICMK6IP.js:161:3)
+    at async _AppStore.loadCurrentUser (http://localhost:4200/chunk-NRLTKYG3.js:33:16) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=783cb38b:5987
+[   54235ms] [ERROR] ERROR Error: You are using a function which must be overwritten by a plugin.
+        You should either prevent the usage of this function or add the plugin via:
+            import { RxDBMigrationSchemaPlugin } from 'rxdb/plugins/migration-schema';
+            addRxPlugin(RxDBMigrationSchemaPlugin);
+        
+    at pluginMissing (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:1335:10)
+    at RxCollectionBase2.getMigrationState (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:2901:11)
+    at RxCollectionBase2.migratePromise (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:2908:17)
+    at createRxCollection (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3509:24)
+    at async http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3882:24
+    at async Promise.all (index 0)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3879:5)
+    at async getDatabase (http://localhost:4200/chunk-NICMK6IP.js:161:3)
+    at async _AppStore.createDefaultUser (http://localhost:4200/chunk-NRLTKYG3.js:43:16)
+    at async Promise.all (index 0) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=783cb38b:5987
+[   54236ms] [ERROR] Error: You are using a function which must be overwritten by a plugin.
+        You should either prevent the usage of this function or add the plugin via:
+            import { RxDBMigrationSchemaPlugin } from 'rxdb/plugins/migration-schema';
+            addRxPlugin(RxDBMigrationSchemaPlugin);
+        
+    at pluginMissing (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:1335:10)
+    at RxCollectionBase2.getMigrationState (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:2901:11)
+    at RxCollectionBase2.migratePromise (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:2908:17)
+    at createRxCollection (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3509:24)
+    at async http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3882:24
+    at async Promise.all (index 0)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3879:5)
+    at async getDatabase (http://localhost:4200/chunk-NICMK6IP.js:161:3)
+    at async _AppStore.createDefaultUser (http://localhost:4200/chunk-NRLTKYG3.js:43:16)
+    at async Promise.all (index 0) @ http://localhost:4200/main.js:212

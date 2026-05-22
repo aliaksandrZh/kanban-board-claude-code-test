@@ -1,0 +1,513 @@
+[      52ms] [WARNING] -------------- RxDB dev-mode warning -------------------------------
+you are seeing this because you use the RxDB dev-mode plugin https://rxdb.info/dev-mode.html?console=dev-mode 
+This is great in development mode, because it will run many checks to ensure
+that you use RxDB correct. If you see this in production mode,
+you did something wrong because the dev-mode plugin will decrease the performance.
+
+🤗 Hint: To get the most out of RxDB, check out the Premium Plugins
+to get access to faster storages and more professional features: https://rxdb.info/premium/?console=dev-mode 
+
+You can disable this warning by calling disableWarnings() from the dev-mode plugin.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=322e110b:2230
+[      57ms] [ERROR] ERROR RxError (DVM1): 
+
+Error message: When dev-mode is enabled, your storage must use one of the schema validators at the top level. This is because most problems people have with RxDB is because they store data that is not valid to the schema which causes strange bugs and problems.
+Error code: DVM1
+Cause: The storage Adapter you use does not support schema validation.
+Fix:  Wrap your storage with a validator like wrappedValidateAjvStorage()
+Docs: https://rxdb.info/rx-storage.html?console=errors&code=DVM1
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#DVM1 
+
+--------------------
+Parameters:
+database: "kanban_db"
+storage: "dexie"
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-E7EZ6U6A.js?v=322e110b:241:10)
+    at before (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=322e110b:2279:17)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-E7EZ6U6A.js?v=322e110b:1758:37
+    at Array.forEach (<anonymous>)
+    at runPluginHooks (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-E7EZ6U6A.js?v=322e110b:1758:20)
+    at createRxDatabase (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-5I37OA7F.js?v=322e110b:4062:3)
+    at getDatabase (http://localhost:4200/chunk-MBCA5AME.js:151:20)
+    at _AppStore.createDefaultUser (http://localhost:4200/chunk-2I5JLNMU.js?t=1779480823508:43:22)
+    at http://localhost:4200/main.js:52:25
+    at runInInjectionContext (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=322e110b:4872:12) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=322e110b:5987
+[      57ms] [ERROR] RxError (DVM1): 
+
+Error message: When dev-mode is enabled, your storage must use one of the schema validators at the top level. This is because most problems people have with RxDB is because they store data that is not valid to the schema which causes strange bugs and problems.
+Error code: DVM1
+Cause: The storage Adapter you use does not support schema validation.
+Fix:  Wrap your storage with a validator like wrappedValidateAjvStorage()
+Docs: https://rxdb.info/rx-storage.html?console=errors&code=DVM1
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#DVM1 
+
+--------------------
+Parameters:
+database: "kanban_db"
+storage: "dexie"
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-E7EZ6U6A.js?v=322e110b:241:10)
+    at before (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=322e110b:2279:17)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-E7EZ6U6A.js?v=322e110b:1758:37
+    at Array.forEach (<anonymous>)
+    at runPluginHooks (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-E7EZ6U6A.js?v=322e110b:1758:20)
+    at createRxDatabase (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-5I37OA7F.js?v=322e110b:4062:3)
+    at getDatabase (http://localhost:4200/chunk-MBCA5AME.js:151:20)
+    at _AppStore.createDefaultUser (http://localhost:4200/chunk-2I5JLNMU.js?t=1779480823508:43:22)
+    at http://localhost:4200/main.js:52:25
+    at runInInjectionContext (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=322e110b:4872:12) @ http://localhost:4200/main.js:212
+[      58ms] [ERROR] ERROR RxError (DVM1): 
+
+Error message: When dev-mode is enabled, your storage must use one of the schema validators at the top level. This is because most problems people have with RxDB is because they store data that is not valid to the schema which causes strange bugs and problems.
+Error code: DVM1
+Cause: The storage Adapter you use does not support schema validation.
+Fix:  Wrap your storage with a validator like wrappedValidateAjvStorage()
+Docs: https://rxdb.info/rx-storage.html?console=errors&code=DVM1
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#DVM1 
+
+--------------------
+Parameters:
+database: "kanban_db"
+storage: "dexie"
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-E7EZ6U6A.js?v=322e110b:241:10)
+    at before (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=322e110b:2279:17)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-E7EZ6U6A.js?v=322e110b:1758:37
+    at Array.forEach (<anonymous>)
+    at runPluginHooks (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-E7EZ6U6A.js?v=322e110b:1758:20)
+    at createRxDatabase (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-5I37OA7F.js?v=322e110b:4062:3)
+    at getDatabase (http://localhost:4200/chunk-MBCA5AME.js:151:20)
+    at _AppStore.loadCurrentUser (http://localhost:4200/chunk-2I5JLNMU.js?t=1779480823508:33:22)
+    at new _AppStore (http://localhost:4200/chunk-2I5JLNMU.js?t=1779480823508:15:10)
+    at Object.AppStore_Factory [as factory] (http://localhost:4200/chunk-2I5JLNMU.js?t=1779480823508:65:12) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=322e110b:5987
+[   60461ms] [WARNING] -------------- RxDB dev-mode warning -------------------------------
+you are seeing this because you use the RxDB dev-mode plugin https://rxdb.info/dev-mode.html?console=dev-mode 
+This is great in development mode, because it will run many checks to ensure
+that you use RxDB correct. If you see this in production mode,
+you did something wrong because the dev-mode plugin will decrease the performance.
+
+🤗 Hint: To get the most out of RxDB, check out the Premium Plugins
+to get access to faster storages and more professional features: https://rxdb.info/premium/?console=dev-mode 
+
+You can disable this warning by calling disableWarnings() from the dev-mode plugin.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=783cb38b:2232
+[   60514ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=783cb38b:6331
+[   60514ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=783cb38b:6331
+[   60520ms] [ERROR] ERROR RxError (SC34): 
+
+Error message: Fields of type string that are used in an index, must have set the maxLength attribute in the schema
+Error code: SC34
+Cause: A string field used in an index is missing the maxLength attribute.
+Fix: Set maxLength for the field.
+Docs: https://rxdb.info/rx-schema.html?console=errors&code=SC34#indexes
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#SC34 
+
+--------------------
+Parameters:
+index: "status"
+field: "status"
+schema: {
+  "title": "card schema",
+  "version": 0,
+  "type": "object",
+  "primaryKey": "id",
+  "properties": {
+    "id": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "projectId": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "feature",
+        "task",
+        "bug"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "active",
+        "ready_to_test",
+        "completed",
+        "closed"
+      ]
+    },
+    "assigneeId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "labels": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "checklist": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "completed": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "text",
+          "completed"
+        ]
+      }
+    },
+    "relatedCardIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string"
+    },
+    "modifiedAt": {
+      "type": "number"
+    },
+    "modifiedBy": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "projectId",
+    "title",
+    "description",
+    "type",
+    "status",
+    "labels",
+    "checklist",
+    "relatedCardIds",
+    "createdAt",
+    "createdBy",
+    "modifiedAt",
+    "modifiedBy"
+  ],
+  "indexes": [
+    "projectId",
+    "status"
+  ]
+}
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:237:10)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=783cb38b:1659:21
+    at Array.forEach (<anonymous>)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=783cb38b:1652:20
+    at Array.forEach (<anonymous>)
+    at checkSchema (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=783cb38b:1634:24)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-BAQBE4B6.js?v=783cb38b:2372:37
+    at Array.forEach (<anonymous>)
+    at runPluginHooks (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-BAQBE4B6.js?v=783cb38b:2372:20)
+    at createRxSchema (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:712:5) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=783cb38b:5987
+[   60521ms] [ERROR] RxError (SC34): 
+
+Error message: Fields of type string that are used in an index, must have set the maxLength attribute in the schema
+Error code: SC34
+Cause: A string field used in an index is missing the maxLength attribute.
+Fix: Set maxLength for the field.
+Docs: https://rxdb.info/rx-schema.html?console=errors&code=SC34#indexes
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#SC34 
+
+--------------------
+Parameters:
+index: "status"
+field: "status"
+schema: {
+  "title": "card schema",
+  "version": 0,
+  "type": "object",
+  "primaryKey": "id",
+  "properties": {
+    "id": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "projectId": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "feature",
+        "task",
+        "bug"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "active",
+        "ready_to_test",
+        "completed",
+        "closed"
+      ]
+    },
+    "assigneeId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "labels": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "checklist": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "completed": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "text",
+          "completed"
+        ]
+      }
+    },
+    "relatedCardIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string"
+    },
+    "modifiedAt": {
+      "type": "number"
+    },
+    "modifiedBy": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "projectId",
+    "title",
+    "description",
+    "type",
+    "status",
+    "labels",
+    "checklist",
+    "relatedCardIds",
+    "createdAt",
+    "createdBy",
+    "modifiedAt",
+    "modifiedBy"
+  ],
+  "indexes": [
+    "projectId",
+    "status"
+  ]
+}
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:237:10)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=783cb38b:1659:21
+    at Array.forEach (<anonymous>)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=783cb38b:1652:20
+    at Array.forEach (<anonymous>)
+    at checkSchema (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=783cb38b:1634:24)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-BAQBE4B6.js?v=783cb38b:2372:37
+    at Array.forEach (<anonymous>)
+    at runPluginHooks (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-BAQBE4B6.js?v=783cb38b:2372:20)
+    at createRxSchema (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:712:5) @ http://localhost:4200/main.js:212
+[   60525ms] [ERROR] ERROR RxError (SC34): 
+
+Error message: Fields of type string that are used in an index, must have set the maxLength attribute in the schema
+Error code: SC34
+Cause: A string field used in an index is missing the maxLength attribute.
+Fix: Set maxLength for the field.
+Docs: https://rxdb.info/rx-schema.html?console=errors&code=SC34#indexes
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#SC34 
+
+--------------------
+Parameters:
+index: "status"
+field: "status"
+schema: {
+  "title": "card schema",
+  "version": 0,
+  "type": "object",
+  "primaryKey": "id",
+  "properties": {
+    "id": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "projectId": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "feature",
+        "task",
+        "bug"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "active",
+        "ready_to_test",
+        "completed",
+        "closed"
+      ]
+    },
+    "assigneeId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "labels": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "checklist": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "completed": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "text",
+          "completed"
+        ]
+      }
+    },
+    "relatedCardIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "createdAt": {
+      "type": "number"
+    },
+    "createdBy": {
+      "type": "string"
+    },
+    "modifiedAt": {
+      "type": "number"
+    },
+    "modifiedBy": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "projectId",
+    "title",
+    "description",
+    "type",
+    "status",
+    "labels",
+    "checklist",
+    "relatedCardIds",
+    "createdAt",
+    "createdBy",
+    "modifiedAt",
+    "modifiedBy"
+  ],
+  "indexes": [
+    "projectId",
+    "status"
+  ]
+}
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:237:10)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=783cb38b:1659:21
+    at Array.forEach (<anonymous>)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=783cb38b:1652:20
+    at Array.forEach (<anonymous>)
+    at checkSchema (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=783cb38b:1634:24)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-BAQBE4B6.js?v=783cb38b:2372:37
+    at Array.forEach (<anonymous>)
+    at runPluginHooks (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-BAQBE4B6.js?v=783cb38b:2372:20)
+    at createRxSchema (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:712:5) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=783cb38b:5987

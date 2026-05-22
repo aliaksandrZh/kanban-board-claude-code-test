@@ -1,0 +1,47 @@
+- generic [ref=e2]:
+  - navigation [ref=e4]:
+    - link "Kanban" [ref=e5] [cursor=pointer]:
+      - /url: /projects
+    - generic [ref=e6]:
+      - link "Dashboard" [ref=e7] [cursor=pointer]:
+        - /url: /projects
+      - combobox "Current user" [ref=e9]:
+        - option "root" [selected]
+  - generic [ref=e33]:
+    - banner [ref=e34]:
+      - heading "Website Redesign" [level=1] [ref=e35]
+      - paragraph [ref=e36]: Redesign the company website
+      - navigation [ref=e37]:
+        - link "Board" [ref=e38] [cursor=pointer]:
+          - /url: /project/project_1779481332646_mabikuy/board
+        - link "Wiki" [ref=e39] [cursor=pointer]:
+          - /url: /project/project_1779481332646_mabikuy/wiki
+    - generic [ref=e42]:
+      - button "New Card" [active] [ref=e44] [cursor=pointer]
+      - generic [ref=e68]:
+        - heading "Create Card" [level=3] [ref=e69]
+        - textbox "Title" [ref=e70]
+        - textbox "Description" [ref=e71]
+        - combobox [ref=e72]:
+          - option "Feature" [selected]
+          - option "Task"
+          - option "Bug"
+        - generic [ref=e73]:
+          - button "Cancel" [ref=e74] [cursor=pointer]
+          - button "Create" [ref=e75] [cursor=pointer]
+      - generic [ref=e45]:
+        - generic [ref=e47]:
+          - generic [ref=e48]: New
+          - generic [ref=e49]: "0"
+        - generic [ref=e51]:
+          - generic [ref=e52]: Active
+          - generic [ref=e53]: "0"
+        - generic [ref=e55]:
+          - generic [ref=e56]: Ready to Test
+          - generic [ref=e57]: "0"
+        - generic [ref=e59]:
+          - generic [ref=e60]: Completed
+          - generic [ref=e61]: "0"
+        - generic [ref=e63]:
+          - generic [ref=e64]: Closed
+          - generic [ref=e65]: "0"

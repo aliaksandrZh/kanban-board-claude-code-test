@@ -1,0 +1,95 @@
+[      52ms] [WARNING] -------------- RxDB dev-mode warning -------------------------------
+you are seeing this because you use the RxDB dev-mode plugin https://rxdb.info/dev-mode.html?console=dev-mode 
+This is great in development mode, because it will run many checks to ensure
+that you use RxDB correct. If you see this in production mode,
+you did something wrong because the dev-mode plugin will decrease the performance.
+
+🤗 Hint: To get the most out of RxDB, check out the Premium Plugins
+to get access to faster storages and more professional features: https://rxdb.info/premium/?console=dev-mode 
+
+You can disable this warning by calling disableWarnings() from the dev-mode plugin.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=783cb38b:2232
+[      84ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=783cb38b:6331
+[      85ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=783cb38b:6331
+[     113ms] [ERROR] ERROR Error: You are using a function which must be overwritten by a plugin.
+        You should either prevent the usage of this function or add the plugin via:
+            import { RxDBMigrationSchemaPlugin } from 'rxdb/plugins/migration-schema';
+            addRxPlugin(RxDBMigrationSchemaPlugin);
+        
+    at pluginMissing (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:1335:10)
+    at RxCollectionBase2.getMigrationState (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:2901:11)
+    at RxCollectionBase2.migratePromise (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:2908:17)
+    at createRxCollection (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3509:24)
+    at async http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3882:24
+    at async Promise.all (index 0)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3879:5)
+    at async getDatabase (http://localhost:4200/chunk-NICMK6IP.js:161:3)
+    at async _AppStore.loadCurrentUser (http://localhost:4200/chunk-NRLTKYG3.js:33:16) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=783cb38b:5987
+[     121ms] [ERROR] ERROR Error: You are using a function which must be overwritten by a plugin.
+        You should either prevent the usage of this function or add the plugin via:
+            import { RxDBMigrationSchemaPlugin } from 'rxdb/plugins/migration-schema';
+            addRxPlugin(RxDBMigrationSchemaPlugin);
+        
+    at pluginMissing (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:1335:10)
+    at RxCollectionBase2.getMigrationState (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:2901:11)
+    at RxCollectionBase2.migratePromise (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:2908:17)
+    at createRxCollection (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3509:24)
+    at async http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3882:24
+    at async Promise.all (index 0)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3879:5)
+    at async getDatabase (http://localhost:4200/chunk-NICMK6IP.js:161:3)
+    at async _AppStore.createDefaultUser (http://localhost:4200/chunk-NRLTKYG3.js:43:16)
+    at async Promise.all (index 0) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=783cb38b:5987
+[     121ms] [ERROR] Error: You are using a function which must be overwritten by a plugin.
+        You should either prevent the usage of this function or add the plugin via:
+            import { RxDBMigrationSchemaPlugin } from 'rxdb/plugins/migration-schema';
+            addRxPlugin(RxDBMigrationSchemaPlugin);
+        
+    at pluginMissing (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-ASYQIT3P.js?v=783cb38b:1335:10)
+    at RxCollectionBase2.getMigrationState (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:2901:11)
+    at RxCollectionBase2.migratePromise (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:2908:17)
+    at createRxCollection (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3509:24)
+    at async http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3882:24
+    at async Promise.all (index 0)
+    at async RxDatabaseBase2.addCollections (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-CAGGNMHO.js?v=783cb38b:3879:5)
+    at async getDatabase (http://localhost:4200/chunk-NICMK6IP.js:161:3)
+    at async _AppStore.createDefaultUser (http://localhost:4200/chunk-NRLTKYG3.js:43:16)
+    at async Promise.all (index 0) @ http://localhost:4200/main.js:212
+[   67654ms] [WARNING] -------------- RxDB dev-mode warning -------------------------------
+you are seeing this because you use the RxDB dev-mode plugin https://rxdb.info/dev-mode.html?console=dev-mode 
+This is great in development mode, because it will run many checks to ensure
+that you use RxDB correct. If you see this in production mode,
+you did something wrong because the dev-mode plugin will decrease the performance.
+
+🤗 Hint: To get the most out of RxDB, check out the Premium Plugins
+to get access to faster storages and more professional features: https://rxdb.info/premium/?console=dev-mode 
+
+You can disable this warning by calling disableWarnings() from the dev-mode plugin.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_dev-mode.js?v=104ca896:2232
+[   67701ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=104ca896:6332
+[   67701ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=104ca896:6332
+[   67927ms] [LOG] Angular is running in development mode. @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=104ca896:17249

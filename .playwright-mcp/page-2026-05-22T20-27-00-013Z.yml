@@ -1,0 +1,30 @@
+- generic [ref=e2]:
+  - navigation [ref=e4]:
+    - link "Kanban" [ref=e5] [cursor=pointer]:
+      - /url: /projects
+    - generic [ref=e6]:
+      - link "Dashboard" [ref=e7] [cursor=pointer]:
+        - /url: /projects
+      - combobox "Current user" [ref=e9]:
+        - option "root" [selected]
+  - generic [ref=e11]:
+    - banner [ref=e12]:
+      - heading "Website Redesign" [level=1] [ref=e13]
+      - paragraph [ref=e14]: Redesign the company website
+      - navigation [ref=e15]:
+        - link "Board" [ref=e16] [cursor=pointer]:
+          - /url: /project/project_1779481332646_mabikuy/board
+        - link "Wiki" [ref=e17] [cursor=pointer]:
+          - /url: /project/project_1779481332646_mabikuy/wiki
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - link "← Back to Wiki" [ref=e34] [cursor=pointer]:
+          - /url: /project/project_1779481332646_mabikuy/wiki
+        - textbox [ref=e35]: Project Overview
+      - textbox "Page content..." [ref=e36]
+      - generic [ref=e37]:
+        - button "Save" [ref=e38] [cursor=pointer]
+        - button "Cancel" [ref=e39] [cursor=pointer]
+      - generic [ref=e40]:
+        - generic [ref=e41]: Created May 22, 2026, 8:26:57 PM
+        - generic [ref=e42]: Modified May 22, 2026, 8:26:57 PM

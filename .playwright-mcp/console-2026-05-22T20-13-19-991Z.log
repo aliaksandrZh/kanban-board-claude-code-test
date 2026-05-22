@@ -1,0 +1,126 @@
+[      48ms] [ERROR] ERROR RxError (DB9): 
+
+        RxDB Error-Code: DB9.
+        Hint: Error messages are not included in RxDB core to reduce build size.
+        To show the full error messages and to ensure that you do not make any mistakes when using RxDB,
+        use the dev-mode plugin when you are in development mode: https://rxdb.info/dev-mode.html?console=error
+        
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#DB9 
+
+--------------------
+Parameters:
+database: "kanban_db"
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-4UOUYEHN.js?v=3afc84ca:478:10)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb.js?v=b7376995:4192:15
+    at createRxDatabase (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb.js?v=b7376995:4218:5)
+    at getDatabase (http://localhost:4200/chunk-MBCA5AME.js:151:20)
+    at _AppStore.createDefaultUser (http://localhost:4200/chunk-2I5JLNMU.js:43:22)
+    at http://localhost:4200/main.js:52:25
+    at runInInjectionContext (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=3afc84ca:4872:12)
+    at _ApplicationInitStatus.runInitializers (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=3afc84ca:18402:26)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=3afc84ca:26524:18
+    at _callAndReportToErrorHandler (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=3afc84ca:26571:20) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=3afc84ca:5987
+[      48ms] [ERROR] RxError (DB9): 
+
+        RxDB Error-Code: DB9.
+        Hint: Error messages are not included in RxDB core to reduce build size.
+        To show the full error messages and to ensure that you do not make any mistakes when using RxDB,
+        use the dev-mode plugin when you are in development mode: https://rxdb.info/dev-mode.html?console=error
+        
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#DB9 
+
+--------------------
+Parameters:
+database: "kanban_db"
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-4UOUYEHN.js?v=3afc84ca:478:10)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb.js?v=b7376995:4192:15
+    at createRxDatabase (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb.js?v=b7376995:4218:5)
+    at getDatabase (http://localhost:4200/chunk-MBCA5AME.js:151:20)
+    at _AppStore.createDefaultUser (http://localhost:4200/chunk-2I5JLNMU.js:43:22)
+    at http://localhost:4200/main.js:52:25
+    at runInInjectionContext (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=3afc84ca:4872:12)
+    at _ApplicationInitStatus.runInitializers (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=3afc84ca:18402:26)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=3afc84ca:26524:18
+    at _callAndReportToErrorHandler (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=3afc84ca:26571:20) @ http://localhost:4200/main.js:209
+[      80ms] [ERROR] ERROR RxError (DB9): 
+
+        RxDB Error-Code: DB9.
+        Hint: Error messages are not included in RxDB core to reduce build size.
+        To show the full error messages and to ensure that you do not make any mistakes when using RxDB,
+        use the dev-mode plugin when you are in development mode: https://rxdb.info/dev-mode.html?console=error
+        
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#DB9 
+
+--------------------
+Parameters:
+database: "kanban_db"
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-4UOUYEHN.js?v=3afc84ca:478:10)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb.js?v=b7376995:4192:15
+    at createRxDatabase (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb.js?v=b7376995:4218:5)
+    at getDatabase (http://localhost:4200/chunk-MBCA5AME.js:151:20)
+    at _AppStore.loadCurrentUser (http://localhost:4200/chunk-2I5JLNMU.js:33:22)
+    at new _AppStore (http://localhost:4200/chunk-2I5JLNMU.js:15:10)
+    at Object.AppStore_Factory [as factory] (http://localhost:4200/chunk-2I5JLNMU.js:65:12)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=3afc84ca:4726:35
+    at runInInjectorProfilerContext (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=3afc84ca:3870:5)
+    at R3Injector.hydrate (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=3afc84ca:4724:11) @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=3afc84ca:5987
+[   23554ms] [WARNING] -------------- RxDB Open Core RxStorage -------------------------------
+You are using the free Dexie.js based RxStorage implementation from RxDB https://rxdb.info/rx-storage-dexie.html?console=dexie 
+While this is a great option, we want to let you know that there are faster storage solutions available in our premium plugins.
+For professional users and production environments, we highly recommend considering these premium options to enhance performance and reliability.
+ https://rxdb.info/premium/?console=dexie 
+If you already purchased premium access you can disable this log by calling the setPremiumFlag() function from rxdb-premium/plugins/shared.
+--------------------------------------------------------------------- @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb_plugins_storage-dexie.js?v=b7376995:6327
+[   23571ms] [ERROR] ERROR RxError (DB8): 
+
+        RxDB Error-Code: DB8.
+        Hint: Error messages are not included in RxDB core to reduce build size.
+        To show the full error messages and to ensure that you do not make any mistakes when using RxDB,
+        use the dev-mode plugin when you are in development mode: https://rxdb.info/dev-mode.html?console=error
+        
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#DB8 
+
+--------------------
+Parameters:
+name: "kanban_db"
+storage: "dexie"
+link: "https://rxdb.info/rx-database.html#ignoreduplicate"
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-4UOUYEHN.js?v=3afc84ca:478:10)
+    at throwIfDatabaseNameUsed (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb.js?v=b7376995:4112:11)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb.js?v=b7376995:4197:7
+    at createRxDatabase (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb.js?v=b7376995:4218:5)
+    at getDatabase (http://localhost:4200/chunk-3MGOKFRG.js:151:20)
+    at _AppStore.createDefaultUser (http://localhost:4200/chunk-NOVXSGXN.js:43:22)
+    at http://localhost:4200/main.js:52:25
+    at runInInjectionContext (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=3afc84ca:4872:12)
+    at _ApplicationInitStatus.runInitializers (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=3afc84ca:18402:26)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=3afc84ca:26524:18 @ http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=3afc84ca:5987
+[   23571ms] [ERROR] RxError (DB8): 
+
+        RxDB Error-Code: DB8.
+        Hint: Error messages are not included in RxDB core to reduce build size.
+        To show the full error messages and to ensure that you do not make any mistakes when using RxDB,
+        use the dev-mode plugin when you are in development mode: https://rxdb.info/dev-mode.html?console=error
+        
+Find out more about this error here: https://rxdb.info/errors.html?console=errors#DB8 
+
+--------------------
+Parameters:
+name: "kanban_db"
+storage: "dexie"
+link: "https://rxdb.info/rx-database.html#ignoreduplicate"
+
+    at newRxError (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-4UOUYEHN.js?v=3afc84ca:478:10)
+    at throwIfDatabaseNameUsed (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb.js?v=b7376995:4112:11)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb.js?v=b7376995:4197:7
+    at createRxDatabase (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/rxdb.js?v=b7376995:4218:5)
+    at getDatabase (http://localhost:4200/chunk-3MGOKFRG.js:151:20)
+    at _AppStore.createDefaultUser (http://localhost:4200/chunk-NOVXSGXN.js:43:22)
+    at http://localhost:4200/main.js:52:25
+    at runInInjectionContext (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=3afc84ca:4872:12)
+    at _ApplicationInitStatus.runInitializers (http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=3afc84ca:18402:26)
+    at http://localhost:4200/@fs/home/developer/workspace/kanban-board/.angular/cache/21.2.12/kanban-board/vite/deps/chunk-PTXNRVMQ.js?v=3afc84ca:26524:18 @ http://localhost:4200/main.js:209
