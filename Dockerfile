@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
     git \
     gnupg \
+    openssh-client \
     procps \
     sudo \
     zstd \
@@ -35,12 +36,13 @@ ENV ANTHROPIC_API_KEY=
 ENV ANTHROPIC_BASE_URL=http://localhost:11434
 
 # Create workspace directory for runtime clone
-RUN mkdir -p /workspace
+RUN mkdir -p /root/workspace
 
 # Copy scripts
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 COPY start-ollama.sh /usr/local/bin/start-ollama.sh
-RUN chmod +x /usr/local/bin/entrypoint.sh /usr/local/bin/start-ollama.sh
+RUN chmod +x /usr/local/bin/entrypoint.sh /usr/local/bin/start-ollama.sh \
+    && sed -i 's/\r$//' /usr/local/bin/entrypoint.sh /usr/local/bin/start-ollama.sh
 
 # Run entrypoint at container startup
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]

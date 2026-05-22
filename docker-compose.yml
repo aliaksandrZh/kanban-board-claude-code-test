@@ -2,25 +2,23 @@ services:
   ai-dev-env:
     env_file:
       - .env
+      - .env.public
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: claude_ollama_workspace
     tty: true
     stdin_open: true
     ports:
       - "11434:11434"
     environment:
       - ANTHROPIC_API_KEY=${OLLAMA_API_KEY}
-      # Route Claude Code locally to our container's internal Ollama instance
-      - ANTHROPIC_BASE_URL=http://127.0.0.1:11434
-      - ANTHROPIC_AUTH_TOKEN=ollama
-      - BRANCH=main
+      - ANTHROPIC_BASE_URL=${ANTHROPIC_BASE_URL}
+      - ANTHROPIC_AUTH_TOKEN=${ANTHROPIC_AUTH_TOKEN}
     volumes:
       - ollama_data:/root/.ollama
       # Ollama auth
-      - ./keys/id_ed25519:/root/.ollama/id_ed25519:ro
-      - ./keys/id_ed25519.pub:/root/.ollama/id_ed25519.pub:ro
+      - ./keys/ollama/id_ed25519:/root/.ollama/id_ed25519:ro
+      - ./keys/ollama/id_ed25519.pub:/root/.ollama/id_ed25519.pub:ro
     restart: unless-stopped
 
 volumes:
