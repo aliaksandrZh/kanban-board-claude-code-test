@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest", "--headless"],
+      "env": {
+        "PLAYWRIGHT_BROWSERS_PATH": "/opt/playwright-browsers",
+        "PLAYWRIGHT_MCP_EXECUTABLE_PATH": "/opt/playwright-browsers/chromium-1223/chrome-linux64/chrome"
+      }
+    }
+  }
+}
