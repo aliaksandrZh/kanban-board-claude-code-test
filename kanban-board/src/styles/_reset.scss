@@ -1,0 +1,17 @@
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+      sans-serif;
+    color: var(--fg-theme-primary);
+    background: var(--fill-theme-primary);
+    line-height: 1.5;
+  }
+}
