@@ -1,3 +1,6 @@
+## User Requirements
+- /docs
+
 ## Development Rules
 - Develop in a user-agnostic manner.
 - Save unresolved blockers or issues to /logs; they will be addressed with the user later.
