@@ -1,6 +1,4 @@
-## Startup Directive
-
-1. Read `docs/prd.md`.
+User Requirements `docs/prd.md`.
 
 ## Development Rules
 
