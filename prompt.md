@@ -1,1 +1,1 @@
-Need to implement the functionality required by the user. Follow all provided CLAUDE.md instructions
+Need to implement the functionality of /docs/prd.md. Follow all provided CLAUDE.md instructions
