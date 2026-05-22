@@ -1,1 +1,1 @@
-Need to implement the functionality required by the user.
+Need to implement the functionality required by the user. Follow all provided CLAUDE.md instructions
