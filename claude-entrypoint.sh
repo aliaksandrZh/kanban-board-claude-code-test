@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+# Entrypoint for using host machine Ollama (no internal Ollama daemon)
+
 # Validate required env vars before any expensive setup
 if [ -z "${OLLAMA_MODEL:-}" ]; then
     echo "ERROR: OLLAMA_MODEL environment variable is not set" >&2
@@ -46,8 +48,21 @@ else
     exit 1
 fi
 
-# Start Ollama via independent script
-/usr/local/bin/start-ollama.sh
+# Wait for host Ollama to be ready
+HOST_OLLAMA_URL="${ANTHROPIC_BASE_URL:-http://host.docker.internal:11434}"
+echo "Waiting for host Ollama at $HOST_OLLAMA_URL..."
+for i in {1..30}; do
+    if curl -s "$HOST_OLLAMA_URL" > /dev/null 2>&1; then
+        echo "Host Ollama is ready"
+        break
+    fi
+    if [ $i -eq 30 ]; then
+        echo "ERROR: Host Ollama not available at $HOST_OLLAMA_URL after 30 seconds" >&2
+        echo "Make sure Ollama is running on the host machine and accessible" >&2
+        exit 1
+    fi
+    sleep 1
+done
 
 # Clone repo into /workspace at container startup
 if [ ! -d "$TARGET_DIR/.git" ]; then
@@ -84,8 +99,9 @@ EOF
 
 # Run Claude Code with the specified model and prompt
 echo "========================================"
-echo "CLAUDE CODE STARTING"
+echo "CLAUDE CODE STARTING (Host Ollama Mode)"
 echo "Model: $OLLAMA_MODEL"
+echo "Ollama URL: $HOST_OLLAMA_URL"
 echo "Prompt length: ${#PROMPT} characters"
 echo "========================================"
 

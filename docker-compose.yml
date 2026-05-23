@@ -1,36 +1,12 @@
 services:
-  ai-dev-env:
-    # tty: true 
+  ai-dev-env-local:
+    # Uses Ollama running on the host machine
     env_file:
       - .env
       - .env.public
     build:
       context: .
       dockerfile: Dockerfile
-    ports:
-      - "11434:11434"
-    environment:
-      - ANTHROPIC_API_KEY=${OLLAMA_API_KEY}
-      - ANTHROPIC_BASE_URL=${ANTHROPIC_BASE_URL}
-      - ANTHROPIC_AUTH_TOKEN=${ANTHROPIC_AUTH_TOKEN}
-    volumes:
-      - ollama_data:/home/developer/.ollama
-      # Ollama auth
-      - ./keys/ollama/id_ed25519:/home/developer/.ollama/id_ed25519:ro
-      - ./keys/ollama/id_ed25519.pub:/home/developer/.ollama/id_ed25519.pub:ro
-      # Git SSH keys
-      - ./keys/git/id_ed25519:/home/developer/.ssh-host/id_ed25519:ro
-      - ./keys/git/id_ed25519.pub:/home/developer/.ssh-host/id_ed25519.pub:ro
-
-  ai-dev-env-local-ollama:
-    # Uses Ollama running on the host machine instead of container
-    env_file:
-      - .env
-      - .env.public
-    build:
-      context: .
-      dockerfile: Dockerfile
-    entrypoint: ["/usr/local/bin/claude-local-ollama.sh"]
     extra_hosts:
       - "host.docker.internal:host-gateway"
     environment:
@@ -41,6 +17,3 @@ services:
       # Git SSH keys
       - ./keys/git/id_ed25519:/home/developer/.ssh-host/id_ed25519:ro
       - ./keys/git/id_ed25519.pub:/home/developer/.ssh-host/id_ed25519.pub:ro
-
-volumes:
-  ollama_data:
