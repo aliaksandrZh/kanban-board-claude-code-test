@@ -33,40 +33,40 @@ else
 fi
 
 # Start Ollama via independent script
-/usr/local/bin/start-ollama.sh
+# /usr/local/bin/start-ollama.sh
 
 # Clone repo into /workspace at container startup
-if [ ! -d "$TARGET_DIR/.git" ]; then
-    git clone "$REPO_URL" "$TARGET_DIR"
-fi
+# if [ ! -d "$TARGET_DIR/.git" ]; then
+#     git clone "$REPO_URL" "$TARGET_DIR"
+# fi
 
-cd "$TARGET_DIR"
-git fetch origin
-git checkout "$BRANCH"
+# cd "$TARGET_DIR"
+# git fetch origin
+# git checkout "$BRANCH"
 
-# Override with local config
-git config user.email "$GIT_USER_EMAIL"
-git config user.name "$GIT_USER_NAME"
+# # Override with local config
+# git config user.email "$GIT_USER_EMAIL"
+# git config user.name "$GIT_USER_NAME"
 
 # Ensure Playwright Chromium binary is discoverable and configure MCP
-npx playwright install chromium || true
-CHROMIUM_BIN=$(find /opt/playwright-browsers -name chrome -type f 2>/dev/null | head -1)
+# npx playwright install chromium || true
+# CHROMIUM_BIN=$(find /opt/playwright-browsers -name chrome -type f 2>/dev/null | head -1)
 
-cat > .mcp.json << EOF
-{
-  "mcpServers": {
-    "playwright": {
-      "type": "stdio",
-      "command": "npx",
-      "args": ["-y", "@playwright/mcp@latest", "--headless"],
-      "env": {
-        "PLAYWRIGHT_BROWSERS_PATH": "/opt/playwright-browsers",
-        "PLAYWRIGHT_MCP_EXECUTABLE_PATH": "$CHROMIUM_BIN"
-      }
-    }
-  }
-}
-EOF
+# cat > .mcp.json << EOF
+# {
+#   "mcpServers": {
+#     "playwright": {
+#       "type": "stdio",
+#       "command": "npx",
+#       "args": ["-y", "@playwright/mcp@latest", "--headless"],
+#       "env": {
+#         "PLAYWRIGHT_BROWSERS_PATH": "/opt/playwright-browsers",
+#         "PLAYWRIGHT_MCP_EXECUTABLE_PATH": "$CHROMIUM_BIN"
+#       }
+#     }
+#   }
+# }
+# EOF
 
 # Keep container alive with interactive bash
 exec bash

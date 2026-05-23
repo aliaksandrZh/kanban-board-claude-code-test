@@ -1,5 +1,6 @@
 services:
   ai-dev-env-local:
+    tty: true
     # Uses Ollama running on the host machine
     env_file:
       - .env
@@ -12,7 +13,7 @@ services:
     environment:
       - ANTHROPIC_API_KEY=${OLLAMA_API_KEY}
       - ANTHROPIC_BASE_URL=http://host.docker.internal:11434
-      - ANTHROPIC_AUTH_TOKEN=${ANTHROPIC_AUTH_TOKEN}
+      - ANTHROPIC_AUTH_TOKEN=ollama
     volumes:
       # Git SSH keys
       - ./keys/git/id_ed25519:/home/developer/.ssh-host/id_ed25519:ro
