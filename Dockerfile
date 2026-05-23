@@ -58,9 +58,10 @@ USER root
 # Copy scripts
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 COPY claude-entrypoint.sh /usr/local/bin/claude-entrypoint.sh
+COPY claude-local-ollama.sh /usr/local/bin/claude-local-ollama.sh
 COPY start-ollama.sh /usr/local/bin/start-ollama.sh
-RUN chmod +x /usr/local/bin/entrypoint.sh /usr/local/bin/claude-entrypoint.sh /usr/local/bin/start-ollama.sh \
-    && sed -i 's/\r$//' /usr/local/bin/entrypoint.sh /usr/local/bin/claude-entrypoint.sh /usr/local/bin/start-ollama.sh
+RUN chmod +x /usr/local/bin/entrypoint.sh /usr/local/bin/claude-entrypoint.sh /usr/local/bin/claude-local-ollama.sh /usr/local/bin/start-ollama.sh \
+    && sed -i 's/\r$//' /usr/local/bin/entrypoint.sh /usr/local/bin/claude-entrypoint.sh /usr/local/bin/claude-local-ollama.sh /usr/local/bin/start-ollama.sh
 
 # Run entrypoint at container startup as developer
 USER developer
