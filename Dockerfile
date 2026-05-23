@@ -21,8 +21,15 @@ RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
     && rm -rf /var/lib/apt/lists/* \
     && npm install -g pnpm
 
+# Install Playwright MCP globally and pre-download Chromium for all users
+ENV PLAYWRIGHT_BROWSERS_PATH=/opt/playwright-browsers
+RUN npm install -g @playwright/mcp playwright \
+    && npx playwright install --with-deps chromium \
+    && chmod -R a+rX /opt/playwright-browsers
+
 # Create developer user before installing user-scoped tools
-RUN useradd -m -s /bin/bash developer
+RUN useradd -m -s /bin/bash developer \
+    && chown -R developer:developer /opt/playwright-browsers
 
 # Install Ollama (system-wide daemon)
 RUN curl -fsSL https://ollama.com/install.sh | sh

@@ -1,5 +1,6 @@
 services:
   ai-dev-env:
+    # tty: true 
     env_file:
       - .env
       - .env.public

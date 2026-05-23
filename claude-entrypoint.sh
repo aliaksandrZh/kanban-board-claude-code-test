@@ -62,6 +62,26 @@ git checkout "$BRANCH"
 git config user.email "$GIT_USER_EMAIL"
 git config user.name "$GIT_USER_NAME"
 
+# Ensure Playwright Chromium binary is discoverable and configure MCP
+npx playwright install chromium || true
+CHROMIUM_BIN=$(find /opt/playwright-browsers -name chrome -type f 2>/dev/null | head -1)
+
+cat > .mcp.json << EOF
+{
+  "mcpServers": {
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest", "--headless"],
+      "env": {
+        "PLAYWRIGHT_BROWSERS_PATH": "/opt/playwright-browsers",
+        "PLAYWRIGHT_MCP_EXECUTABLE_PATH": "$CHROMIUM_BIN"
+      }
+    }
+  }
+}
+EOF
+
 # Run Claude Code with the specified model and prompt
 echo "========================================"
 echo "CLAUDE CODE STARTING"
